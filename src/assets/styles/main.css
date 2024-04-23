@@ -1,6 +1,365 @@
 /* The entry file for compiling all Stylus files */
 /* Core imports */
 /* Basic Layouting */
+:root {
+  --primary-black: #000;
+  --primary-neutral: #fff;
+  --primary-dark: #333;
+  --secondary-light: #ddd;
+  --secondary-dark: #495057;
+  --accent-red: #dd2b1c;
+  --accent-blue: #2e409e;
+  --accent-green: #1d9921;
+  --accent-neutral: #f8f8f8;
+  --accent-light: #e5e5e5;
+  --accent-dark: #666;
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 300;
+  src: url("/assets/fonts/core/FiraSans-Light.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-Light.woff") format('woff'), url("/assets/fonts/core/FiraSans-Light.ttf") format('truetype');
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 400;
+  src: url("/assets/fonts/core/FiraSans-Regular.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-Regular.woff") format('woff'), url("/assets/fonts/core/FiraSans-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 400;
+  src: url("/assets/fonts/core/FiraSans-Italic.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-Italic.woff") format('woff'), url("/assets/fonts/core/FiraSans-Italic.ttf") format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 500;
+  src: url("/assets/fonts/core/FiraSans-Medium.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-Medium.woff") format('woff'), url("/assets/fonts/core/FiraSans-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 600;
+  src: url("/assets/fonts/core/FiraSans-SemiBold.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-SemiBold.woff") format('woff'), url("/assets/fonts/core/FiraSans-SemiBold.ttf") format('truetype');
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 600;
+  src: url("/assets/fonts/core/FiraSans-SemiBoldItalic.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-SemiBoldItalic.woff") format('woff'), url("/assets/fonts/core/FiraSans-SemiBoldItalic.ttf") format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 700;
+  src: url("/assets/fonts/core/FiraSans-Bold.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-Bold.woff") format('woff'), url("/assets/fonts/core/FiraSans-Bold.ttf") format('truetype');
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 900;
+  src: url("/assets/fonts/core/FiraSans-Black.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-Black.woff") format('woff'), url("/assets/fonts/core/FiraSans-Black.ttf") format('truetype');
+}
+@font-face {
+  font-display: fallback;
+  font-family: FiraSans;
+  font-weight: 900;
+  src: url("/assets/fonts/core/FiraSans-BlackItalic.woff2") format('woff2'), url("/assets/fonts/core/FiraSans-BlackItalic.woff") format('woff'), url("/assets/fonts/core/FiraSans-BlackItalic.ttf") format('truetype');
+  font-style: italic;
+}
+html {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.body--no-overflow,
+.flyout-visible,
+.navigation-visible {
+  overflow: hidden;
+}
+.site-wrapper {
+  background: var(--neutral-00);
+  max-width: 100vw;
+  margin: 0 auto;
+  color: var(--neutral-90);
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size-base);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  margin-top: 6rem;
+  flex-grow: 2;
+}
+.with-strip-bar main {
+  margin-top: 9.4rem;
+}
+a {
+  text-decoration: inherit;
+  color: currentColor;
+}
+a.keyword-link {
+  text-decoration: underline;
+}
+input,
+textarea {
+  background-color: var(--primary-neutral);
+  color: var(--secondary-dark);
+  font-weight: var(--font-weight-light);
+  font-family: var(--font-family-regular);
+  line-height: 2;
+  border: 1px solid var(--accent-light);
+  padding: 0.25rem 0.75rem;
+  font-size: 1.4rem;
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+select {
+  display: inline-block;
+  width: fit-content;
+  height: 3.4rem;
+  border-radius: 500px;
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
+  background-color: var(--primary-neutral);
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 2rem center;
+  padding: 0 4.8rem 0 3.2rem;
+  background-image: url("/assets/svgs/chevron-down.svg");
+  background-size: 12px;
+}
+select:disabled {
+  border-color: var(--secondary-light);
+  color: var(--secondary-light);
+  background-image: none;
+  padding: 0 3.2rem;
+}
+#hero-iframe-container,
+#CookiebotWidget {
+  display: none;
+}
+#cookie-wrapper {
+  position: fixed !important;
+  width: auto !important;
+  height: auto !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+#cookie-banner {
+  height: 100% !important;
+}
+.html-editor-base-style a {
+  color: $color-orange;
+  text-decoration: none;
+}
+.html-editor-base-style b,
+.html-editor-base-style strong {
+  font-weight: bold;
+}
+.html-editor-base-style em {
+  font-style: italic;
+}
+.html-editor-base-style p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.html-editor-base-style s {
+  text-decoration: line-through;
+}
+.html-editor-base-style u {
+  text-decoration: underline;
+}
+.html-editor-base-style ul,
+.html-editor-base-style ol {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.html-editor-base-style ul {
+  list-style-type: disc;
+}
+.html-editor-base-style ol {
+  list-style-type: decimal;
+}
+.html-editor-base-style li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+button,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+html {
+  font-size: 10px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquotebefore,
+blockquoteafter,
+qbefore,
+qafter {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  background: inherit;
+}
+:root {
+  --font-family-regular: Inter, sans-serif;
+  --font-family-accent: "Georgia Regular", Georgia, "Times New Roman", serif;
+  --font-size-base: 1.4rem;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+:root {
+  --elevation-s: 0 0 2px 0 rgba(0,0,0,0.05), 0 1px 3px 0 rgba(0,0,0,0.15);
+  --elevation-m: 0 2px 5px -1px rgba(0,0,0,0.15), 0 1px 3px 0 rgba(0,0,0,0.08);
+  --elevation-l: 0 3px 8px -1px rgba(0,0,0,0.15), 0 1px 3px 0 rgba(0,0,0,0.05);
+  --elevation-xl: 0 8px 20px -3px rgba(0,0,0,0.12), 0 2px 5px 0 rgba(0,0,0,0.07);
+  --elevation-xxl: 0 12px 40px -8px rgba(0,0,0,0.12), 0 5px 10px 0 rgba(0,0,0,0.07);
+}
+:root {
+  --z-index-lowest: 1;
+  --z-index-low: 10;
+  --z-index-medium: 50;
+  --z-index-overlay: 60;
+  --z-index-high: 70;
+  --z-index-highest: 100;
+}
 /* Patterns */
 /* Add project specific styles here */
 .test500 {

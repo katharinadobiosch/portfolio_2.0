@@ -1,0 +1,26 @@
+{
+  "Shopping Bag": {
+    "value": "shopping-bag"
+  },
+  "Shopping Bag Plus": {
+    "value": "shopping-bag-plus"
+  },
+  "Search": {
+    "value": "search"
+  },
+  "User": {
+    "value": "user"
+  },
+  "Language": {
+    "value": "language"
+  },
+  "Gift": {
+    "value": "gift"
+  },
+  "Expand": {
+    "value": "expand-regular"
+  },
+  "Arrow Right": {
+    "value": "arrow-right"
+  }
+}

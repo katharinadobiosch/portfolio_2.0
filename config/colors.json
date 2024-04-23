@@ -1,0 +1,57 @@
+{
+  "Primary Black": {
+    "value": "#000",
+    "variableName": "--primary-black",
+    "group": "core"
+  },
+  "Primary Neutral": {
+    "value": "#FFF",
+    "variableName": "--primary-neutral",
+    "group": "core"
+  },
+  "Primary Dark": {
+    "value": "#333",
+    "variableName": "--primary-dark",
+    "group": "core"
+  },
+  "Secondary Light": {
+    "value": "#DDD",
+    "variableName": "--secondary-light",
+    "group": "secondary"
+  },
+  "Secondary Dark": {
+    "value": "#495057",
+    "variableName": "--secondary-dark",
+    "group": "secondary"
+  },
+  "Accent Red": {
+    "value": "#DD2B1C",
+    "variableName": "--accent-red",
+    "group": "accent"
+  },
+  "Accent Blue": {
+    "value": "#2E409E",
+    "variableName": "--accent-blue",
+    "group": "accent"
+  },
+  "Accent Green": {
+    "value": "#1d9921",
+    "variableName": "--accent-green",
+    "group": "accent"
+  },
+  "Accent Neutral": {
+    "value": "#F8F8F8",
+    "variableName": "--accent-neutral",
+    "group": "accent"
+  },
+  "Accent Light": {
+    "value": "#E5E5E5",
+    "variableName": "--accent-light",
+    "group": "accent"
+  },
+  "Accent Dark": {
+    "value": "#666",
+    "variableName": "--accent-dark",
+    "group": "accent"
+  }
+}

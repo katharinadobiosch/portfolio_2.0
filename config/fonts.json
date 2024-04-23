@@ -1,0 +1,37 @@
+{
+  "Inter Light": {
+    "family": "Inter",
+    "fileName": "Inter-Light",
+    "weight": 300,
+    "isItalic": false,
+    "fileTypes": ["woff2", "woff", "ttf"]
+  },
+  "Inter Regular": {
+    "family": "Inter",
+    "fileName": "Inter-Regular",
+    "weight": 400,
+    "isItalic": false,
+    "fileTypes": ["woff2", "woff", "ttf"]
+  },
+  "Inter Medium": {
+    "family": "Inter",
+    "fileName": "Inter-Medium",
+    "weight": 500,
+    "isItalic": false,
+    "fileTypes": ["woff2", "woff", "ttf"]
+  },
+  "Inter Semibold": {
+    "family": "Inter",
+    "fileName": "Inter-SemiBold",
+    "weight": 600,
+    "isItalic": false,
+    "fileTypes": ["woff2", "woff", "ttf"]
+  },
+  "Sabon Next LTPro BoldItalic": {
+    "family": "Sabon Next LT Pro",
+    "fileName": "SabonNextLTPro-BoldItalic",
+    "weight": 700,
+    "isItalic": true,
+    "fileTypes": ["woff2", "woff", "otf"]
+  }
+}
