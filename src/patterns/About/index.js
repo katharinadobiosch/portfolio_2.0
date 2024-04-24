@@ -3,7 +3,7 @@ import SectionFrame from "../SectionFrame";
 function About() {
     return (
         <div className="">
-            <SectionFrame>test</SectionFrame>
+            <SectionFrame text="ABOUT" section="about" />
         </div>
     );
 }

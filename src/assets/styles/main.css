@@ -342,6 +342,7 @@ button {
   transition: top 0.5s;
   max-width: calc(100vw);
   z-index: var(--z-index-highest);
+  background: var(--background);
 }
 .header__content-wrapper {
   display: flex;
@@ -380,12 +381,24 @@ button {
 .logo__content-wrapper p:last-child {
   letter-spacing: 0.35rem;
 }
-.test500 {
-  background: #f00;
-  font-family: SourceCodePro-Regular;
+.section-frame {
+  height: 100vh;
 }
-.test600 {
-  background: #00f;
+.section-frame__content-wrapper p {
+  padding: 2.5rem;
+}
+.section-frame__pink {
+  color: #f0a;
+}
+.section-frame__yellow {
+  color: #ffe66d;
+}
+.section-frame__green {
+  color: #969696 R072;
+}
+.section-frame p {
+  padding: 3rem 3rem;
+  font-size: 2.8rem;
 }
 .test500 {
   background: #f00;
