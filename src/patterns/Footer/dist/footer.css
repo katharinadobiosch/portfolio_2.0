@@ -1,20 +1,20 @@
-.header 
+.footer {
   margin: 0;
-  // padding: 0 var(--space-s);
-  padding: 0 14px;
+  padding: 0 16px;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   transition: top 0.5s;
   max-width: calc(100vw);
   z-index: var(--z-index-highest);
-
-
-.header__content-wrapper 
+}
+.footer__content-wrapper {
+  padding: 2.4rem 1.6rem;
   display: flex;
-  align-items: center;
+  gap: 1.6rem;
   justify-content: space-between;
-  height: 6rem;
-
-
+  align-items: center;
+  background-color: #fff;
+  background: #00f;
+}

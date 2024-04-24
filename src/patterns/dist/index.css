@@ -68,7 +68,6 @@ html {
 }
 main {
   margin-top: 6rem;
-  padding: 0 16px;
   flex-grow: 2;
 }
 .with-strip-bar main {
@@ -292,7 +291,7 @@ button {
   background: inherit;
 }
 :root {
-  --font-family-regular: SourceCodePro, sans-monospace;
+  --font-family-regular: SourceCodePro, sans-serif;
   --font-size-base: 1.4rem;
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -332,60 +331,10 @@ button {
 .test600 {
   background: #00f;
 }
-.header {
-  margin: 0;
-  padding: 0 14px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: top 0.5s;
-  max-width: calc(100vw);
-  z-index: var(--z-index-highest);
-}
 .header__content-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 6rem;
-}
-.footer {
-  margin: 0;
-  padding: 0 16px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: top 0.5s;
-  max-width: calc(100vw);
-  z-index: var(--z-index-highest);
-}
-.footer__content-wrapper {
-  padding: 2.4rem 1.6rem;
-  display: flex;
-  gap: 1.6rem;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  background: #00f;
-}
-.logo__content-wrapper p {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-weight: var(--font-weight-regular);
-}
-.logo__content-wrapper p:first-child {
-  letter-spacing: 0.2rem;
-}
-.logo__content-wrapper p:last-child {
-  letter-spacing: 0.35rem;
-}
-.test500 {
-  background: #f00;
-  font-family: SourceCodePro-Regular;
-}
-.test600 {
-  background: #00f;
 }
 .test500 {
   background: #f00;
