@@ -1,5 +1,6 @@
-function Heading() {
-    return <div className="test500">BUTTON CLICK</div>;
+function Heading(props) {
+    const content = props.children;
+    return <div className="test500" content={content}></div>;
 }
 
 export default Heading;
