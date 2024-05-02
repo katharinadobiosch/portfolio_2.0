@@ -3,9 +3,9 @@
 /* Basic Layouting */
 :root {
   --background: #23262e;
-  --primary: #4f5967;
-  --secondary: #ff8e00;
-  --tertiary: #e9ecf1;
+  --pink: #f0a;
+  --yellow: #ffe66d;
+  --green: #96e072;
   --brand-1: #2f77c8;
   --brand-2: #ad1a1a;
   --brand-3: #ffae16;
@@ -45,14 +45,10 @@
   src: url("../../../public/assets/fonts/SourceCodePro-Black.ttf") format('truetype');
 }
 html {
+  font-size: 62.5%;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.body--no-overflow,
-.flyout-visible,
-.navigation-visible {
-  overflow: hidden;
 }
 .site-wrapper {
   background: var(--background);
@@ -71,15 +67,10 @@ main {
   padding: 0 16px;
   flex-grow: 2;
 }
-.with-strip-bar main {
-  margin-top: 9.4rem;
-}
+em,
 a {
   text-decoration: inherit;
   color: currentColor;
-}
-a.keyword-link {
-  text-decoration: underline;
 }
 input,
 textarea {
@@ -357,9 +348,10 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: top 0.5s;
   max-width: calc(100vw);
   z-index: var(--z-index-highest);
+  display: flex;
+  justify-content: flex-end;
 }
 .footer__content-wrapper {
   padding: 2.4rem 1.6rem;
@@ -367,8 +359,6 @@ button {
   gap: 1.6rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  background: #00f;
 }
 .logo__content-wrapper p {
   text-transform: uppercase;
@@ -388,17 +378,18 @@ button {
   padding: 2.5rem;
 }
 .section-frame__pink {
-  color: #f0a;
+  color: var(--pink);
 }
 .section-frame__yellow {
-  color: #ffe66d;
+  color: var(--yellow);
 }
 .section-frame__green {
-  color: #969696 R072;
+  color: var(--green);
 }
 .section-frame p {
   padding: 3rem 3rem;
   font-size: 2.8rem;
+  line-height: 3.3rem;
 }
 .test500 {
   background: #f00;
@@ -406,4 +397,36 @@ button {
 }
 .test600 {
   background: #00f;
+}
+.references__title {
+  font-size: 2.8rem;
+}
+.references__img-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.references__img-wrapper img {
+  height: 5rem;
+  margin: 2rem;
+}
+.references__title {
+  font-size: 2.8rem;
+}
+.references__img-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.references__img-wrapper img {
+  height: 5rem;
+  margin: 2rem;
 }

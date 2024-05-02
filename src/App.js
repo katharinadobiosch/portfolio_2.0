@@ -6,6 +6,7 @@ import About from "./patterns/About";
 import References from "./patterns/References";
 import Skills from "./patterns/Skills";
 import Contact from "./patterns/Contact";
+import ProjectsOverview from "./patterns/ProjectsOverview";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <main>
                 <About />
                 <References />
+                <ProjectsOverview />
                 <Skills />
                 <Contact />
             </main>

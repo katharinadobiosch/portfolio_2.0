@@ -3,12 +3,11 @@ $breakpoint-desktop = 769px
 
 
 html
+  font-size 62.5%
   font-smooth always
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 
-.body--no-overflow, .flyout-visible, .navigation-visible
-  overflow hidden
 
 .site-wrapper
   background var(--background)
@@ -27,16 +26,12 @@ main
   // padding: 0 var(--space-s);
   padding 0 16px
   flex-grow 2
-
-  .with-strip-bar &
-    margin-top 9.4rem // 6rem header + 3.4rem stripbar
+em // 6rem header + 3.4rem stripbar
 
 a
   text-decoration inherit
   color currentColor
 
-  &.keyword-link
-    text-decoration underline
 
 input, textarea
   background-color var(--primary-neutral)

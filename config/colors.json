@@ -4,19 +4,19 @@
         "variableName": "--background",
         "group": "core"
     },
-    "Primary": {
-        "value": "#4F5967",
-        "variableName": "--primary",
+    "Pink": {
+        "value": "#FF00AA",
+        "variableName": "--pink",
         "group": "core"
     },
-    "Secondary": {
-        "value": "#FF8E00",
-        "variableName": "--secondary",
+    "Yellow": {
+        "value": "#FFE66D",
+        "variableName": "--yellow",
         "group": "core"
     },
-    "Tertiary": {
-        "value": "#E9ECF1",
-        "variableName": "--tertiary",
+    "Green": {
+        "value": "#96E072",
+        "variableName": "--green",
         "group": "core"
     },
     "Brand 1": {
