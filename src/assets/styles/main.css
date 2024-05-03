@@ -385,6 +385,8 @@ button {
 }
 .footer__link {
   color: var(--link);
+  text-decoration-style: wavy;
+  text-decoration-color: var(--link);
 }
 .footer__link:hover {
   color: var(--link-hover);
@@ -466,6 +468,8 @@ button {
 }
 .contact__link {
   color: var(--link);
+  text-decoration-style: wavy;
+  text-decoration-color: var(--link);
 }
 .contact__link:hover {
   color: var(--link-hover);
@@ -492,6 +496,8 @@ button {
 }
 .projects-overview__thumbnail h3 {
   color: var(--link);
+  text-decoration-style: wavy;
+  text-decoration-color: var(--link);
 }
 .projects-overview__thumbnail h3:hover {
   color: var(--link-hover);
