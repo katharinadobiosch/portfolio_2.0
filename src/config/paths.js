@@ -1,6 +1,6 @@
 export const HOME = "/";
 export const ABOUT = "/about";
-export const WORK_REFERENCES = "/work-references";
+export const WORK_REFERENCES = "/work-experience";
 export const PROJECTS = "/projects";
 export const SKILLS = "/skills";
 export const CONTACT = "/contact";

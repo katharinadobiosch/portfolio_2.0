@@ -9,17 +9,33 @@ import taschen from "../../assets/references/taschen-logo.svg";
 function References(props) {
     return (
         <div className="references">
-            <SectionFrame section="work references">
+            <SectionFrame section="work-experience">
                 <p className="references__title ">
                     Projects I worked on during my time at Marmalade GmbH and
                     Datora WebSystems.
                 </p>
                 <div className="references__img-wrapper">
-                    <img src={beurer} alt="Beurer Logo" />
-                    <img src={taschen} alt="Taschen Verlag Logo" />
-                    <img src="" alt="Universal Music Logo" />
-                    <img src={more} alt="More Nutrition Logo" />
-                    <img src={oace} alt="Oace Logo" />
+                    <img
+                        src={beurer}
+                        alt="Beurer Logo"
+                        className="white-logo"
+                    />
+                    <img
+                        src={taschen}
+                        alt="Taschen Verlag Logo"
+                        className="white-logo"
+                    />
+                    <img
+                        src=""
+                        alt="Universal Music Logo"
+                        className="white-logo"
+                    />
+                    <img
+                        src={more}
+                        alt="More Nutrition Logo"
+                        className="white-logo"
+                    />
+                    <img src={oace} alt="Oace Logo" className="white-logo" />
                 </div>
             </SectionFrame>
         </div>

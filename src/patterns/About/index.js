@@ -3,7 +3,7 @@ import SectionFrame from "../SectionFrame";
 function About() {
     return (
         <div className="">
-            <SectionFrame section="about">
+            <SectionFrame section="about-me">
                 <p>
                     As a passionate{" "}
                     <span className="about__keywords">Frontend Developer</span>{" "}

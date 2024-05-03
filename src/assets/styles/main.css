@@ -422,7 +422,7 @@ button {
   height: auto;
 }
 .references__title {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-base);
 }
 .references__img-wrapper {
   display: flex;
@@ -436,9 +436,12 @@ button {
 .references__img-wrapper img {
   height: 5rem;
   margin: 2rem;
+}
+.white-logo {
+  filter: invert(100%);
 }
 .references__title {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-base);
 }
 .references__img-wrapper {
   display: flex;
@@ -452,6 +455,9 @@ button {
 .references__img-wrapper img {
   height: 5rem;
   margin: 2rem;
+}
+.white-logo {
+  filter: invert(100%);
 }
 .modal {
   position: fixed;

@@ -21,7 +21,7 @@ const ProjectsOverview = () => {
     };
 
     return (
-        <SectionFrame section="my projects">
+        <SectionFrame section="personal-projects">
             <div className="projects-overview">
                 {projects.map((project) => (
                     <div
