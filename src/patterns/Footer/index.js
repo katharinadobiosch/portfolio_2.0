@@ -1,13 +1,13 @@
+import { Link } from "react-router-dom";
+import * as paths from "../../config/paths";
+
 function Footer() {
     return (
         <footer className="footer">
             <div className="footer__content-wrapper">
-                <a
-                    href="https://www.linkedin.com/in/alexander-kr%C3%B6ll-3b1b3b1b1/"
-                    className="footer__link"
-                >
+                <Link to={paths.LEGAL_NOTICE} className="footer__link">
                     Legal Notice
-                </a>
+                </Link>
             </div>
         </footer>
     );
