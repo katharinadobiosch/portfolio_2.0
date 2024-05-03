@@ -56,7 +56,8 @@ html {
   margin: 0 auto;
   color: var(--neutral-90);
   font-family: var(--font-family-regular);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xsmall);
+  line-height: var(--line-height-xsmall);
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -287,10 +288,21 @@ button {
 }
 :root {
   --font-family-regular: SourceCodePro, sans-monospace;
-  --font-size-base: 1.6rem;
-  --font-size-small: 1.4rem;
-  --font-size-medium: 1.8rem;
-  --font-size-large: 2.4rem;
+  --font-size-xsmall: 2rem;
+  --line-height-xsmall: 2.08;
+  --font-size-small: 2.8rem;
+  --line-height-small: 1.92;
+  --font-size-medium: 4.4rem;
+  --line-height-medium: 1.84;
+  --font-size-large: 5.2rem;
+  --line-height-large: 1.2;
+  --font-size-xlarge: 8rem;
+  --line-height-xlarge: 1.6;
+  --font-size-xxlarge: 12.8rem;
+  --line-height-xxlarge: 1.6;
+  --space-small: 1.6rem;
+  --space-medium: 4.8rem;
+  --space-large: 8rem;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -374,18 +386,19 @@ button {
 }
 .logo__content-wrapper p {
   text-transform: uppercase;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xsmall);
   font-weight: var(--font-weight-regular);
+  line-height: 1;
 }
 .logo__content-wrapper p:first-child {
   letter-spacing: 0.2rem;
 }
 .logo__content-wrapper p:last-child {
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.4rem;
 }
 .section-frame {
   height: auto;
-  padding: 3rem 0;
+  padding-bottom: 15rem;
 }
 .section-frame__content-wrapper p {
   padding: 2.5rem;
@@ -400,7 +413,7 @@ button {
   color: var(--green);
 }
 .section-frame p {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
   line-height: 3.3rem;
 }
 .about__keywords {
@@ -422,7 +435,7 @@ button {
   height: auto;
 }
 .references__title {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xsmall);
 }
 .references__img-wrapper {
   display: flex;
@@ -441,7 +454,7 @@ button {
   filter: invert(100%);
 }
 .references__title {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-xsmall);
 }
 .references__img-wrapper {
   display: flex;
@@ -497,6 +510,7 @@ button {
 .welcome p {
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
 }
 .welcome__keywords {
   color: var(--yellow);
