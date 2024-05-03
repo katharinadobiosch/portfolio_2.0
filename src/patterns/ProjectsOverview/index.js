@@ -4,8 +4,14 @@ import Modal from "../Modal";
 
 const ProjectsOverview = () => {
     const projects = [
-        { name: "Burger Creator", url: "/burger-creator" },
-        { name: "Adventskalender", url: "/adventskalender" },
+        {
+            name: "Burger Creator",
+            url: "https://katharinadobiosch-burger-builder.netlify.app/",
+        },
+        {
+            name: "Adventskalender",
+            url: "https://katharinadobiosch-adventcalendar.netlify.app/",
+        },
     ];
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -38,8 +44,7 @@ const ProjectsOverview = () => {
                         {/* Hier kannst du den iFrame verwenden, um das Projekt einzubetten */}
                         <h1>{selectedProject.name}</h1>
                         <iframe
-                            // src={selectedProject.url}
-                            src="https://www.google.com/"
+                            src={selectedProject.url}
                             title={selectedProject.name}
                             width="100%"
                             height="500px"

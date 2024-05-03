@@ -8,9 +8,9 @@ const ProjectDetail = () => {
     if (projectName === "portfolio") {
         projectUrl = "URL_DES_PORTFOLIOS";
     } else if (projectName === "burger-creator") {
-        projectUrl = "URL_DES_BURGER_CREATORS";
+        projectUrl = "https://katharinadobiosch-burger-builder.netlify.app/";
     } else if (projectName === "adventskalender") {
-        projectUrl = "URL_DES_ADVENTSKALENDERS";
+        projectUrl = "https://katharinadobiosch-adventcalendar.netlify.app/";
     }
 
     return (
