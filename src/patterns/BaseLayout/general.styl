@@ -24,9 +24,11 @@ html
 main
   margin-top 6rem // to adjust for the header height
   // padding: 0 var(--space-s);
-  padding 0 16px
-  flex-grow 2
-em // 6rem header + 3.4rem stripbar
+  padding 0 5%
+
+  @media (min-width $breakpoint-desktop)
+    padding 0 10%
+  
 
 a
   text-decoration inherit

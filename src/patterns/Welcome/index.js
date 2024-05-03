@@ -2,7 +2,7 @@ import SectionFrame from "../SectionFrame";
 
 function Welcome() {
     return (
-        <div className="">
+        <div className="welcome">
             <SectionFrame section="welcome">
                 <p>
                     Hi, nice to see you. I'm{" "}

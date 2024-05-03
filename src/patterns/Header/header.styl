@@ -1,7 +1,10 @@
+$breakpoint-tablet = 481px
+$breakpoint-desktop = 769px
+
 .header 
   margin: 0;
   // padding: 0 var(--space-s);
-  padding: 0 14px;
+  padding: 0 5%;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,6 +13,9 @@
   max-width: calc(100vw);
   z-index: var(--z-index-highest);
   background var(--background);
+  
+  @media (min-width $breakpoint-desktop)
+    padding 0 10%
 
 
 .header__content-wrapper 
