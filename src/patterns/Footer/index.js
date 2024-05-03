@@ -6,7 +6,7 @@ function Footer() {
                     href="https://www.linkedin.com/in/alexander-kr%C3%B6ll-3b1b3b1b1/"
                     className="footer__link"
                 >
-                    Impressum
+                    Legal Notice
                 </a>
             </div>
         </footer>

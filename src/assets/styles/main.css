@@ -372,7 +372,7 @@ button {
   letter-spacing: 0.35rem;
 }
 .section-frame {
-  height: 100vh;
+  height: auto;
 }
 .section-frame__content-wrapper p {
   padding: 2.5rem;
@@ -391,12 +391,8 @@ button {
   font-size: 2.8rem;
   line-height: 3.3rem;
 }
-.test500 {
-  background: #f00;
-  font-family: SourceCodePro-Regular;
-}
-.test600 {
-  background: #00f;
+.about__keywords {
+  color: var(--yellow);
 }
 .references__title {
   font-size: 2.8rem;
@@ -464,4 +460,7 @@ button {
 }
 .modal button:focus {
   outline: none;
+}
+.welcome__keywords {
+  color: var(--yellow);
 }
