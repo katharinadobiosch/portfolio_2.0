@@ -1,7 +1,10 @@
+$breakpoint-tablet = 481px
+$breakpoint-desktop = 769px
+
 .footer
   margin: 0;
   // padding: 0 var(--space-s);
-  padding: 0 10%;
+  padding: 0 5%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -11,10 +14,18 @@
   display flex
   justify-content: flex-end
   background: var(--background)
+  
+  @media (min-width $breakpoint-desktop)
+    padding 0 10%
 
+
+.footer__link
+  color var(--link)
+
+.footer__link:hover
+  color var(--link-hover)
+  
 .footer__content-wrapper
-  padding: 2.4rem 1.6rem;
+  padding: 2.4rem 0;
   display: flex;
-  gap: 1.6rem;
-  justify-content: space-between;
   align-items: center;

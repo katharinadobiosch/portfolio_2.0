@@ -6,6 +6,8 @@
   --pink: #f0a;
   --yellow: #ffe66d;
   --green: #96e072;
+  --link: #8a2be2;
+  --link-hover: #6a206a;
   --brand-1: #2f77c8;
   --brand-2: #ad1a1a;
   --brand-3: #ffae16;
@@ -28,7 +30,6 @@
   --fatal: #0c1c2e;
   --idle: #e9ecf1;
   --info: #bfc9d5;
-  --link: #2669b3;
   --notification: #6fc4ff;
   --positive: #91c11e;
 }
@@ -366,7 +367,7 @@ button {
 }
 .footer {
   margin: 0;
-  padding: 0 10%;
+  padding: 0 5%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -377,11 +378,20 @@ button {
   justify-content: flex-end;
   background: var(--background);
 }
+@media (min-width: 769px) {
+  .footer {
+    padding: 0 10%;
+  }
+}
+.footer__link {
+  color: var(--link);
+}
+.footer__link:hover {
+  color: var(--link-hover);
+}
 .footer__content-wrapper {
-  padding: 2.4rem 1.6rem;
+  padding: 2.4rem 0;
   display: flex;
-  gap: 1.6rem;
-  justify-content: space-between;
   align-items: center;
 }
 .logo__content-wrapper p {
@@ -454,6 +464,12 @@ button {
 .white-logo {
   filter: invert(100%);
 }
+.contact__link {
+  color: var(--link);
+}
+.contact__link:hover {
+  color: var(--link-hover);
+}
 .references__title {
   font-size: var(--font-size-xsmall);
 }
@@ -473,6 +489,12 @@ button {
 }
 .white-logo {
   filter: invert(100%);
+}
+.projects-overview__thumbnail h3 {
+  color: var(--link);
+}
+.projects-overview__thumbnail h3:hover {
+  color: var(--link-hover);
 }
 .modal {
   position: fixed;

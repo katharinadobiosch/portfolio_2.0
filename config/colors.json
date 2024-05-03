@@ -19,6 +19,16 @@
         "variableName": "--green",
         "group": "core"
     },
+    "Link": {
+        "value": "#8A2BE2",
+        "variableName": "--link",
+        "group": "core"
+    },
+    "Hover": {
+        "value": "#6A206A",
+        "variableName": "--link-hover",
+        "group": "core"
+    },
     "Brand 1": {
         "value": "#2F77C8",
         "variableName": "--brand-1",
@@ -127,11 +137,6 @@
     "Info": {
         "value": "#BFC9D5",
         "variableName": "--info",
-        "group": "state"
-    },
-    "Link": {
-        "value": "#2669B3",
-        "variableName": "--link",
         "group": "state"
     },
     "Notification": {

@@ -2,7 +2,7 @@ import SectionFrame from "../SectionFrame";
 
 function Contact() {
     return (
-        <div className="">
+        <div className="contact">
             <SectionFrame section="drop-me-a-line">
                 {" "}
                 <p>
@@ -11,11 +11,21 @@ function Contact() {
                     collaborations.
                 </p>
                 <p>
-                    You can reach me via email at{" "}
-                    <a href="mailto:katharinadobiosch@gmail.com">
-                        katharinadobiosch@gmail.com
+                    You can reach me via{" "}
+                    <a
+                        href="mailto:katharinadobiosch@gmail.com"
+                        className="contact__link"
+                    >
+                        email{" "}
                     </a>
-                    , or connect with me on LinkedIn and Instagram.
+                    or connect with me on{" "}
+                    <a
+                        href="https://www.linkedin.com/in/katharinadobiosch/"
+                        className="contact__link"
+                    >
+                        LinkedIn
+                    </a>
+                    .
                 </p>
             </SectionFrame>
         </div>
