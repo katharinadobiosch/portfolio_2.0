@@ -41,7 +41,8 @@ const ProjectsOverview = () => {
                 {/* Modal anzeigen, wenn modalOpen true ist */}
                 {modalOpen && selectedProject && (
                     <Modal onClose={closeModal}>
-                        {/* Hier kannst du den iFrame verwenden, um das Projekt einzubetten */}
+                        <button onClose={closeModal}>Close</button>
+
                         <h1>{selectedProject.name}</h1>
                         <iframe
                             src={selectedProject.url}
