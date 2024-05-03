@@ -445,6 +445,7 @@ button {
   align-items: center;
   margin-bottom: 2rem;
   width: 100%;
+  padding: 0 3rem;
 }
 .references__img-wrapper img {
   height: 5rem;
@@ -464,6 +465,7 @@ button {
   align-items: center;
   margin-bottom: 2rem;
   width: 100%;
+  padding: 0 3rem;
 }
 .references__img-wrapper img {
   height: 5rem;

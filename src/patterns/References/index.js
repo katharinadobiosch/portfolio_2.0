@@ -5,6 +5,7 @@ import beurer from "../../assets/references/beurer-logo.svg";
 import more from "../../assets/references/more-logo.avif";
 import oace from "../../assets/references/oace-logo.png";
 import taschen from "../../assets/references/taschen-logo.svg";
+import umg from "../../assets/references/umg-logo.svg.png";
 
 function References(props) {
     return (
@@ -26,7 +27,7 @@ function References(props) {
                         className="white-logo"
                     />
                     <img
-                        src=""
+                        src={umg}
                         alt="Universal Music Logo"
                         className="white-logo"
                     />
