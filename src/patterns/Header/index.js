@@ -1,3 +1,4 @@
+import HamburgerMenu from "../HamburgerMenu";
 import Logo from "../Logo";
 
 function Header() {
@@ -5,7 +6,7 @@ function Header() {
         <header className="header">
             <div className="header__content-wrapper">
                 <Logo />
-                <div>hamburger menu</div>
+                <HamburgerMenu />
             </div>
         </header>
     );
