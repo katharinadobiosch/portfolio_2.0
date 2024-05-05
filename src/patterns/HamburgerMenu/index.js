@@ -19,22 +19,22 @@ const HamburgerMenu = () => {
                         id="hamburger-menu__menu"
                         className={isOpen ? "open" : ""}
                     >
-                        <a href="#">
+                        <a href="/">
                             <li>home</li>
                         </a>
-                        <a href="#">
+                        <a href="/">
                             <li>aboutMe</li>
                         </a>
-                        <a href="#">
+                        <a href="/">
                             <li>skills</li>
                         </a>
-                        <a href="#">
+                        <a href="/">
                             <li>personalProjects</li>
                         </a>
-                        <a href="#">
+                        <a href="/">
                             <li>workExperience</li>
                         </a>
-                        <a href="#">
+                        <a href="/">
                             <li>dropMeALine</li>
                         </a>
                     </ul>
