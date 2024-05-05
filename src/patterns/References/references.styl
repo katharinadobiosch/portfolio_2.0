@@ -11,11 +11,16 @@
     margin-bottom: var(--space-small);
     width: 100%;
     padding: 0 3rem;
+}
 
-    img {
-        height: 5rem;
-        margin: var(--space-small);;
-    }
+.references__img-wrapper img {
+    height: 5rem;
+    margin: var(--space-small);
+    transition: transform 0.3s ease-in-out;
+}
+
+.references__img-wrapper img:hover {
+    transform: scale(1.1);
 }
 
 .white-logo {

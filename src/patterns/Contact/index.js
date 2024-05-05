@@ -16,8 +16,8 @@ function Contact() {
                         href="mailto:katharinadobiosch@gmail.com"
                         className="contact__link"
                     >
-                        email{" "}
-                    </a>
+                        email
+                    </a>{" "}
                     or connect with me on{" "}
                     <a
                         href="https://www.linkedin.com/in/katharinadobiosch/"

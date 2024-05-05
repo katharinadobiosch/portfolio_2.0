@@ -17,11 +17,12 @@ function About() {
                     intuitive user experiences and eye-catching designs.
                 </p>
                 <p>
-                    My recent accomplishment includes independently creating a{" "}
+                    One of my recent accomplishments includes independently
+                    creating a{" "}
                     <span className="about__keywords">
                         Shopify Advent Calendar App
                     </span>
-                    , set to be released on the{" "}
+                    , which will be released on the{" "}
                     <span className="about__keywords">Shopify App Store</span>{" "}
                     this year. I've also contributed to various{" "}
                     <span className="about__keywords">E-commerce projects</span>{" "}
@@ -39,14 +40,13 @@ function About() {
                     <span className="about__keywords">
                         customer experiences
                     </span>
-                    . My diverse background blends{" "}
+                    . My background in visual merchandising and owning a kids
+                    concept store has equipped me with both{" "}
                     <span className="about__keywords">technical skills</span>{" "}
-                    with{" "}
-                    <span className="about__keywords">
-                        managerial expertise
-                    </span>
-                    , enabling me to tackle frontend development challenges
-                    effectively.
+                    and strong management abilities. This unique blend enables
+                    me to approach front-end development challenges with a
+                    customer-centric mindset, ensuring effective solutions that
+                    prioritize user experience.
                 </p>
                 <p>
                     In addition to my professional experiences, I hold a{" "}
@@ -70,22 +70,19 @@ function About() {
                     <span className="about__keywords">Retail Management</span>.
                 </p>
                 <p>
-                    Fluent in <span className="about__keywords">German</span>,
-                    proficient in{" "}
-                    <span className="about__keywords">English</span>, and with a
-                    solid foundation in{" "}
-                    <span className="about__keywords">Polish</span>, I thrive in{" "}
+                    My passion lies squarely in frontend development, where I
+                    thrive on bringing{" "}
+                    <span className="about__keywords">digital visions</span> to
+                    life and enhancing user experiences. Fluent in{" "}
+                    <span className="about__keywords">German</span>, proficient
+                    in <span className="about__keywords">English</span>, and
+                    with a solid understanding of{" "}
+                    <span className="about__keywords">Polish</span>, I am
+                    comfortable in{" "}
                     <span className="about__keywords">
                         multicultural environments
                     </span>{" "}
-                    and enjoy collaborating with diverse teams. Whether it's
-                    bringing{" "}
-                    <span className="about__keywords">digital visions</span> to
-                    life or enhancing{" "}
-                    <span className="about__keywords">retail experiences</span>,
-                    I'm driven by a passion for{" "}
-                    <span className="about__keywords">innovation</span> and{" "}
-                    <span className="about__keywords">excellence</span>.
+                    and enjoy working with diverse teams.
                 </p>
                 <p>
                     Let's work together to create innovative solutions where{" "}

@@ -16,27 +16,62 @@ function References(props) {
                     Datora WebSystems.
                 </p>
                 <div className="references__img-wrapper">
-                    <img
-                        src={beurer}
-                        alt="Beurer Logo"
-                        className="white-logo"
-                    />
-                    <img
-                        src={taschen}
-                        alt="Taschen Verlag Logo"
-                        className="white-logo"
-                    />
-                    <img
-                        src={umg}
-                        alt="Universal Music Logo"
-                        className="white-logo"
-                    />
-                    <img
-                        src={more}
-                        alt="More Nutrition Logo"
-                        className="white-logo"
-                    />
-                    <img src={oace} alt="Oace Logo" className="white-logo" />
+                    <a
+                        href="https://www.beurer.com/fr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={beurer}
+                            alt="Beurer Logo"
+                            className="white-logo"
+                        />
+                    </a>
+                    <a
+                        href="https://www.taschen.com/de/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={taschen}
+                            alt="Taschen Verlag Logo"
+                            className="white-logo"
+                        />
+                    </a>
+                    <a
+                        href="https://www.umusic.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={umg}
+                            alt="Universal Music Logo"
+                            className="white-logo"
+                        />
+                    </a>
+
+                    <a
+                        href="https://morenutrition.de/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={more}
+                            alt="More Nutrition Logo"
+                            className="white-logo"
+                        />
+                    </a>
+                    <a
+                        href="https://oace.de/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={oace}
+                            alt="Oace Logo"
+                            className="white-logo"
+                        />
+                    </a>
                 </div>
             </SectionFrame>
         </div>

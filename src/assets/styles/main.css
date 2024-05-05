@@ -463,6 +463,10 @@ button {
 .references__img-wrapper img {
   height: 5rem;
   margin: var(--space-small);
+  transition: transform 0.3s ease-in-out;
+}
+.references__img-wrapper img:hover {
+  transform: scale(1.1);
 }
 .white-logo {
   filter: invert(100%);
@@ -491,6 +495,10 @@ button {
 .references__img-wrapper img {
   height: 5rem;
   margin: var(--space-small);
+  transition: transform 0.3s ease-in-out;
+}
+.references__img-wrapper img:hover {
+  transform: scale(1.1);
 }
 .white-logo {
   filter: invert(100%);
