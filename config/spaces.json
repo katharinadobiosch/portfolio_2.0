@@ -1,34 +1,34 @@
 {
     "Space XXXXS": {
-        "value": "2px",
+        "value": "0.2rem",
         "variableName": "--space-four-xs"
     },
     "Space XXXS": {
-        "value": "4xp",
+        "value": "0.4rem",
         "variableName": "--space-three-xs"
     },
     "Space XXS": {
-        "value": "8xp",
+        "value": "0.8rem",
         "variableName": "--space-xxs"
     },
     "Space XS": {
-        "value": "12px",
+        "value": "1.2rem",
         "variableName": "--space-xs"
     },
     "Space S": {
-        "value": "16px",
+        "value": "1.6rem",
         "variableName": "--space-s"
     },
     "Space M": {
-        "value": "20px",
+        "value": "2rem",
         "variableName": "--space-m"
     },
     "Space L": {
-        "value": "24xp",
+        "value": "2.4rem",
         "variableName": "--space-l"
     },
     "Space XL": {
-        "value": "32px",
+        "value": "3.2rem",
         "variableName": "--space-xl"
     },
     "Space XXL": {
@@ -36,7 +36,7 @@
         "variableName": "--space-xxl"
     },
     "Space XXXL": {
-        "value": "64px",
+        "value": "6.4rem",
         "variableName": "--space-xxxl"
     }
 }

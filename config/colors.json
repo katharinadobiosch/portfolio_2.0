@@ -4,6 +4,11 @@
         "variableName": "--background",
         "group": "core"
     },
+    "Neutral 90": {
+        "value": "#D5CED9",
+        "variableName": "--text",
+        "group": "neutral"
+    },
     "Pink": {
         "value": "#FF00AA",
         "variableName": "--pink",
@@ -94,11 +99,7 @@
         "variableName": "--neutral-80",
         "group": "neutral"
     },
-    "Neutral 90": {
-        "value": "#D5CED9",
-        "variableName": "--neutral-90",
-        "group": "neutral"
-    },
+
     "Neutral 100": {
         "value": "#000",
         "variableName": "--neutral-100",

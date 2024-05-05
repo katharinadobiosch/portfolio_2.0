@@ -1,7 +1,7 @@
-$breakpoint-tablet = 481px
-$breakpoint-desktop = 769px
+$breakpoint-tablet = 481px;
+$breakpoint-desktop = 769px;
 
-.footer
+.footer {
   margin: 0;
   // padding: 0 var(--space-s);
   padding: 0 5%;
@@ -11,24 +11,28 @@ $breakpoint-desktop = 769px
   right: 0;
   max-width: calc(100vw);
   z-index: var(--z-index-highest);
-  display flex
-  justify-content: flex-end
-  background: var(--background)
-  
-  @media (min-width $breakpoint-desktop)
-    padding 0 10%
+  display: flex;
+  justify-content: flex-end;
+  background: var(--background);
 
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 10%;
+  }
+}
 
-.footer__link 
-  font-size 1.2rem
-  color var(--link)
-  text-decoration-style wavy
-  text-decoration-color var(--link)
+.footer__link {
+  font-size: 1.2rem;
+  color: var(--link);
+}
 
-.footer__link:hover
-  color var(--link-hover)
-  
-.footer__content-wrapper
+.footer__link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.footer__content-wrapper {
   padding: 2.4rem 0;
   display: flex;
   align-items: center;
+}

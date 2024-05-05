@@ -6,6 +6,7 @@ function Header() {
         <header className="header">
             <div className="header__content-wrapper">
                 <Logo />
+
                 <HamburgerMenu />
             </div>
         </header>
