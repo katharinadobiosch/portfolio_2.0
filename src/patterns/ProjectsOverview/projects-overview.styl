@@ -1,4 +1,21 @@
+.projects-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 5px solid green;
+  width: 100%;
+}
+
+.projects-overview__thumbnail {
+  // border: 5px solid red;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects-overview__thumbnail h3 {
+  cursor pointer;
   color: var(--link);
 }
 
@@ -8,3 +25,13 @@
   text-decoration-style: wavy;
 }
 
+.projects-overview__thumbnail img {
+  cursor: pointer;
+  width: 90%;
+  height: auto;
+  padding-bottom: var(--space-small);
+}
+
+.projects-overview__thumbnail img:hover {
+  transform: scale(1.1);
+}

@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import SectionFrame from "../SectionFrame";
 import Modal from "../Modal";
-import testimage from "";
 
 const ProjectsOverview = () => {
+    console.log("__dirname:", __dirname);
+
     const projects = [
         {
             name: "Burger Creator",
             url: "https://katharinadobiosch-burger-builder.netlify.app/",
-            src: "../../assets/ProjectsOverview/burger.png",
+            src: require("../../assets/ProjectsOverview/burger.png"),
         },
         {
             name: "Adventskalender",
             url: "../../assets/ProjectsOverview/advent-calendar.png",
+            src: require("../../assets/ProjectsOverview/advent-calendar.png"),
         },
     ];
 
