@@ -44,7 +44,7 @@ function About() {
                     concept store has equipped me with both{" "}
                     <span className="about__keywords">technical skills</span>{" "}
                     and strong management abilities. This unique blend enables
-                    me to approach front-end development challenges with a
+                    me to approach Frontend development challenges with a
                     customer-centric mindset, ensuring effective solutions that
                     prioritize user experience.
                 </p>

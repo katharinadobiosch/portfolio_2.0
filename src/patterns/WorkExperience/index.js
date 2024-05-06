@@ -9,13 +9,30 @@ import umg from "../../assets/WorkExperience/umg-logo.svg.png";
 
 function WorkExperience(props) {
     return (
-        <div className="WorkExperience">
+        <div className="work-experience">
             <SectionFrame section="work-experience">
-                <p className="WorkExperience__title ">
-                    Projects I worked on during my time at Marmalade GmbH and
-                    Datora WebSystems.
+                <p className="work-experience__title ">
+                    Projects I worked on during my time at{" "}
+                    <a
+                        href="https://www.marmalade.de/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="work-experience__link"
+                    >
+                        Marmalade GmbH
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://www.datora.de/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="work-experience__link"
+                    >
+                        Datora WebSystems
+                    </a>.
+                    
                 </p>
-                <div className="WorkExperience__img-wrapper">
+                <div className="work-experience__img-wrapper">
                     <a
                         href="https://www.beurer.com/fr/"
                         target="_blank"

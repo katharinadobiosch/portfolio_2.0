@@ -6,8 +6,8 @@
   --pink: #f0a;
   --yellow: #ffe66d;
   --green: #96e072;
-  --link: #8a2be2;
-  --link-hover: #6a206a;
+  --link: #48eddd;
+  --link-hover: #8a2be2;
   --brand-1: #2f77c8;
   --brand-2: #ad1a1a;
   --brand-3: #ffae16;
@@ -444,10 +444,18 @@ button {
   width: 100%;
   height: auto;
 }
-.WorkExperience__title {
+.work-experience__title {
   font-size: var(--font-size-xsmall);
 }
-.WorkExperience__img-wrapper {
+.work-experience__link {
+  color: var(--link);
+}
+.work-experience__link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.work-experience__img-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -457,12 +465,12 @@ button {
   width: 100%;
   padding: 0 3rem;
 }
-.WorkExperience__img-wrapper img {
+.work-experience__img-wrapper img {
   height: 5rem;
   margin: var(--space-small);
   transition: transform 0.3s ease-in-out;
 }
-.WorkExperience__img-wrapper img:hover {
+.work-experience__img-wrapper img:hover {
   transform: scale(1.1);
 }
 .white-logo {

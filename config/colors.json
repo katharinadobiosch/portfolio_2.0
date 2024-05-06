@@ -25,12 +25,12 @@
         "group": "core"
     },
     "Link": {
-        "value": "#8A2BE2",
+        "value": "#48EDDD",
         "variableName": "--link",
         "group": "core"
     },
     "Hover": {
-        "value": "#6A206A",
+        "value": "#8A2BE2",
         "variableName": "--link-hover",
         "group": "core"
     },

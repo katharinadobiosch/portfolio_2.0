@@ -1,8 +1,18 @@
-.WorkExperience__title {
+.work-experience__title {
     font-size: var(--font-size-xsmall);
 }
 
-.WorkExperience__img-wrapper {
+.work-experience__link {
+    color: var(--link);
+}
+
+.work-experience__link:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.work-experience__img-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,13 +23,13 @@
     padding: 0 3rem;
 }
 
-.WorkExperience__img-wrapper img {
+.work-experience__img-wrapper img {
     height: 5rem;
     margin: var(--space-small);
     transition: transform 0.3s ease-in-out;
 }
 
-.WorkExperience__img-wrapper img:hover {
+.work-experience__img-wrapper img:hover {
     transform: scale(1.1);
 }
 
