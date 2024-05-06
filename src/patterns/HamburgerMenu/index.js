@@ -7,6 +7,17 @@ const HamburgerMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+        toggleMenu(); // Close the menu after clicking on a section
+    };
+
     return (
         <div>
             <nav role="navigation">
@@ -22,12 +33,13 @@ const HamburgerMenu = () => {
                         <a href="/">
                             <li>home</li>
                         </a>
-                        <a href="/">
-                            <li>aboutMe</li>
-                        </a>
-                        <a href="/">
-                            <li>skills</li>
-                        </a>
+                        <li onClick={() => scrollToSection("about")}>
+                            aboutMe
+                        </li>
+                        <li onClick={() => scrollToSection("skills")}>
+                            skills
+                        </li>
+
                         <a href="/">
                             <li>personalProjects</li>
                         </a>

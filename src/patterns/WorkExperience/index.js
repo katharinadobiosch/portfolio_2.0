@@ -1,21 +1,21 @@
 import SectionFrame from "../SectionFrame";
 import "/";
 
-import beurer from "../../assets/references/beurer-logo.svg";
-import more from "../../assets/references/more-logo.avif";
-import oace from "../../assets/references/oace-logo.png";
-import taschen from "../../assets/references/taschen-logo.svg";
-import umg from "../../assets/references/umg-logo.svg.png";
+import beurer from "../../assets/WorkExperience/beurer-logo.svg";
+import more from "../../assets/WorkExperience/more-logo.avif";
+import oace from "../../assets/WorkExperience/oace-logo.png";
+import taschen from "../../assets/WorkExperience/taschen-logo.svg";
+import umg from "../../assets/WorkExperience/umg-logo.svg.png";
 
-function References(props) {
+function WorkExperience(props) {
     return (
-        <div className="references">
+        <div className="WorkExperience">
             <SectionFrame section="work-experience">
-                <p className="references__title ">
+                <p className="WorkExperience__title ">
                     Projects I worked on during my time at Marmalade GmbH and
                     Datora WebSystems.
                 </p>
-                <div className="references__img-wrapper">
+                <div className="WorkExperience__img-wrapper">
                     <a
                         href="https://www.beurer.com/fr/"
                         target="_blank"
@@ -78,4 +78,4 @@ function References(props) {
     );
 }
 
-export default References;
+export default WorkExperience;

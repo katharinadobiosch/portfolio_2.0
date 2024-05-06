@@ -4,7 +4,7 @@
         "variableName": "--background",
         "group": "core"
     },
-    "Neutral 90": {
+    "Text": {
         "value": "#D5CED9",
         "variableName": "--text",
         "group": "neutral"

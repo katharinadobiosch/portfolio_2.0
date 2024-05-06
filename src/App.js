@@ -4,7 +4,7 @@ import "../src/assets/styles/main.css";
 import Header from "./patterns/Header";
 import Footer from "./patterns/Footer";
 import About from "./patterns/About";
-import References from "./patterns/References";
+import WorkExperience from "./patterns/WorkExperience";
 import Skills from "./patterns/Skills";
 import Contact from "./patterns/Contact";
 import ProjectsOverview from "./patterns/ProjectsOverview";
@@ -23,12 +23,12 @@ function App() {
                             path={paths.HOME}
                             element={
                                 <>
-                                    <Welcome />
-                                    <About />
-                                    <Skills />
-                                    <ProjectsOverview />
-                                    <References />
-                                    <Contact />
+                                    <Welcome id="home" />
+                                    <About id="about" />
+                                    <Skills id="skills" />
+                                    <ProjectsOverview id="projects-overview" />
+                                    <WorkExperience id="work-experience" />
+                                    <Contact id="contact" />
                                 </>
                             }
                         />

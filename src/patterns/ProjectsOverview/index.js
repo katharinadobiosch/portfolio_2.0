@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import SectionFrame from "../SectionFrame";
 import Modal from "../Modal";
+import testimage from "";
 
 const ProjectsOverview = () => {
     const projects = [
         {
             name: "Burger Creator",
             url: "https://katharinadobiosch-burger-builder.netlify.app/",
+            src: "../../assets/ProjectsOverview/burger.png",
         },
         {
             name: "Adventskalender",
-            url: "https://katharinadobiosch-adventcalendar.netlify.app/",
+            url: "../../assets/ProjectsOverview/advent-calendar.png",
         },
     ];
 
@@ -35,15 +37,18 @@ const ProjectsOverview = () => {
                         key={project.name}
                         onClick={() => openModal(project)}
                     >
+                        <img src={project.src} alt="test" />
                         <h3>{project.name}</h3>
                     </div>
                 ))}
                 {/* Modal anzeigen, wenn modalOpen true ist */}
                 {modalOpen && selectedProject && (
                     <Modal onClose={closeModal}>
-                        <button onClose={closeModal}>Close</button>
+                        <div className="modal__header">
+                            <h1>{selectedProject.name}</h1>
+                            <button onClose={closeModal}>X</button>
+                        </div>
 
-                        <h1>{selectedProject.name}</h1>
                         <iframe
                             src={selectedProject.url}
                             title={selectedProject.name}
