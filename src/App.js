@@ -15,9 +15,9 @@ import LegalNotice from "./patterns/LegalNotice";
 function App() {
     return (
         <div className="site-wrapper">
-            <Header />
             <main>
                 <BrowserRouter>
+                    <Header />
                     <Routes>
                         <Route
                             path={paths.HOME}

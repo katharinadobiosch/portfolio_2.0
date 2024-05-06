@@ -3,8 +3,6 @@ import SectionFrame from "../SectionFrame";
 import Modal from "../Modal";
 
 const ProjectsOverview = () => {
-    console.log("__dirname:", __dirname);
-
     const projects = [
         {
             name: "Burger Creator",
