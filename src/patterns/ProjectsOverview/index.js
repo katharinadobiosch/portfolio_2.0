@@ -11,7 +11,7 @@ const ProjectsOverview = () => {
         },
         {
             name: "Adventskalender",
-            url: "../../assets/ProjectsOverview/advent-calendar.png",
+            url: "https://katharinadobiosch-adventcalendar.netlify.app/",
             src: require("../../assets/ProjectsOverview/advent-calendar.png"),
         },
     ];
