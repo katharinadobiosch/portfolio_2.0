@@ -13,7 +13,7 @@ function Contact() {
                 <p>
                     You can reach me via{" "}
                     <a
-                        href="mailto:katharinadobiosch@gmail.com"
+                        href="mailto:hello@katharinadobiosch.com"
                         className="contact__link"
                     >
                         email
@@ -21,6 +21,8 @@ function Contact() {
                     or connect with me on{" "}
                     <a
                         href="https://www.linkedin.com/in/katharinadobiosch/"
+                        target="_blank"
+                        rel="noreferrer"
                         className="contact__link"
                     >
                         LinkedIn

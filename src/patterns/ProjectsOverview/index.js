@@ -7,12 +7,27 @@ const ProjectsOverview = () => {
         {
             name: "Burger Creator",
             url: "https://katharinadobiosch-burger-builder.netlify.app/",
-            src: require("../../assets/ProjectsOverview/burger.png"),
+            src: require("../../assets/ProjectsOverview/burger-creator.png"),
         },
         {
             name: "Adventskalender",
             url: "https://katharinadobiosch-adventcalendar.netlify.app/",
             src: require("../../assets/ProjectsOverview/advent-calendar.png"),
+        },
+        {
+            name: "Freshbnb",
+            url: "https://freshbnb.vercel.app",
+            src: require("../../assets/ProjectsOverview/freshbnb.png"),
+        },
+        {
+            name: "Press Clippings",
+            content: `<p>Press Clippings ist eine Webanwendung, die es ermöglicht, Presseartikel zu verwalten.</p>`,
+            src: require("../../assets/ProjectsOverview/freshbnb.png"),
+        },
+        {
+            name: "Petstagram",
+            content: `<p></p>`,
+            src: require("../../assets/ProjectsOverview/petstagram.png"),
         },
     ];
 
@@ -29,7 +44,7 @@ const ProjectsOverview = () => {
     };
 
     return (
-        <SectionFrame section="personal-projects">
+        <SectionFrame section="projects-overview">
             <div className="projects-overview">
                 {projects.map((project) => (
                     <div
@@ -48,14 +63,21 @@ const ProjectsOverview = () => {
                             <h1>{selectedProject.name}</h1>
                             <button onClose={closeModal}>X</button>
                         </div>
-
-                        <iframe
-                            src={selectedProject.url}
-                            title={selectedProject.name}
-                            width="100%"
-                            height="500px"
-                            frameBorder="0"
-                        />
+                        {selectedProject.url ? (
+                            <iframe
+                                src={selectedProject.url}
+                                title={selectedProject.name}
+                                width="100%"
+                                height="500px"
+                                frameBorder="0"
+                            />
+                        ) : (
+                            <div
+                                dangerouslySetInnerHTML={{
+                                    __html: selectedProject.content,
+                                }}
+                            ></div>
+                        )}
                     </Modal>
                 )}
             </div>

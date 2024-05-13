@@ -489,6 +489,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-top: var(--space-small);
 }
 .projects-overview__thumbnail {
   width: 50%;
