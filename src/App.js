@@ -13,11 +13,23 @@ import * as paths from "./config/paths";
 import LegalNotice from "./patterns/LegalNotice";
 
 function App() {
+    const scrollToSection = (id) => {
+        console.log("Scrolling to section:", id);
+        const element = document.getElementById(id);
+        console.log("Element:", element);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
+
     return (
         <div className="site-wrapper">
             <main>
                 <BrowserRouter>
-                    <Header />
+                    <Header scrollToSection={scrollToSection} />
                     <Routes>
                         <Route
                             path={paths.HOME}

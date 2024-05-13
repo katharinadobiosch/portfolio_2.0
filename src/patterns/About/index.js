@@ -1,8 +1,10 @@
 import SectionFrame from "../SectionFrame";
 
-function About() {
+function About({ id }) {
+    console.log("About component rendered with ID:", id);
+
     return (
-        <div className="">
+        <div className="" id={id}>
             <SectionFrame section="about-me">
                 <p>
                     As a passionate{" "}

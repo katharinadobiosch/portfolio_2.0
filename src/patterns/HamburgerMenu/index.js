@@ -1,21 +1,16 @@
 import React, { useState } from "react";
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ scrollToSection }) => {
+    const handleClick = (id) => {
+        console.log("Clicked on menu item:", id);
+        scrollToSection(id);
+        setIsOpen(false); // Close the menu
+    };
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-    };
-
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
-        toggleMenu(); // Close the menu after clicking on a section
     };
 
     return (
@@ -30,25 +25,23 @@ const HamburgerMenu = () => {
                         id="hamburger-menu__menu"
                         className={isOpen ? "open" : ""}
                     >
-                        <a href="/">
-                            <li>home</li>
-                        </a>
-                        <li onClick={() => scrollToSection("about")}>
-                            aboutMe
-                        </li>
+                        <li onClick={() => scrollToSection("home")}>home</li>
+                        <li onClick={() => handleClick("about")}>aboutMe</li>
+
                         <li onClick={() => scrollToSection("skills")}>
                             skills
                         </li>
-
-                        <a href="/">
-                            <li>personalProjects</li>
-                        </a>
-                        <a href="/">
-                            <li>workExperience</li>
-                        </a>
-                        <a href="/">
-                            <li>dropMeALine</li>
-                        </a>
+                        <li
+                            onClick={() => scrollToSection("projects-overview")}
+                        >
+                            personalProjects
+                        </li>
+                        <li onClick={() => scrollToSection("work-experience")}>
+                            workExperience
+                        </li>
+                        <li onClick={() => scrollToSection("contact")}>
+                            dropMeALine
+                        </li>
                     </ul>
                 </div>
             </nav>
