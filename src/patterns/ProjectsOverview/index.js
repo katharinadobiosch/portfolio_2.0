@@ -46,40 +46,42 @@ const ProjectsOverview = ({ id }) => {
     return (
         <div className="projects-overview" id={id}>
             <SectionFrame section="projects-overview">
-                {projects.map((project) => (
-                    <div
-                        className="projects-overview__thumbnail"
-                        key={project.name}
-                        onClick={() => openModal(project)}
-                    >
-                        <img src={project.src} alt="test" />
-                        <h3>{project.name}</h3>
-                    </div>
-                ))}
-                {/* Modal anzeigen, wenn modalOpen true ist */}
-                {modalOpen && selectedProject && (
-                    <Modal onClose={closeModal}>
-                        <div className="modal__header">
-                            <h1>{selectedProject.name}</h1>
-                            <button onClose={closeModal}>X</button>
+                <div className="projects-overview__wrapper">
+                    {projects.map((project) => (
+                        <div
+                            className="projects-overview__thumbnail"
+                            key={project.name}
+                            onClick={() => openModal(project)}
+                        >
+                            <img src={project.src} alt={project.name} />
+                            <h3>{project.name}</h3>
                         </div>
-                        {selectedProject.url ? (
-                            <iframe
-                                src={selectedProject.url}
-                                title={selectedProject.name}
-                                width="100%"
-                                height="500px"
-                                frameBorder="0"
-                            />
-                        ) : (
-                            <div
-                                dangerouslySetInnerHTML={{
-                                    __html: selectedProject.content,
-                                }}
-                            ></div>
-                        )}
-                    </Modal>
-                )}{" "}
+                    ))}
+                    {/* Modal anzeigen, wenn modalOpen true ist */}
+                    {modalOpen && selectedProject && (
+                        <Modal onClose={closeModal}>
+                            <div className="modal__header">
+                                <h1>{selectedProject.name}</h1>
+                                <button onClose={closeModal}>X</button>
+                            </div>
+                            {selectedProject.url ? (
+                                <iframe
+                                    src={selectedProject.url}
+                                    title={selectedProject.name}
+                                    width="100%"
+                                    height="500px"
+                                    frameBorder="0"
+                                />
+                            ) : (
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: selectedProject.content,
+                                    }}
+                                ></div>
+                            )}
+                        </Modal>
+                    )}{" "}
+                </div>
             </SectionFrame>
         </div>
     );

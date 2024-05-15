@@ -1,23 +1,28 @@
 .projects-overview {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
+}
+
+.projects-overview__wrapper {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: var(--space-small);
 }
 
 .projects-overview__thumbnail {
   // border: 5px solid red;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: var(--space-small);
+  border: 1px solid var(--text);
+  margin: 1rem;
 }
 
 .projects-overview__thumbnail h3 {
   cursor: pointer;
   color: var(--link);
+  padding-bottom: var(--space-medium);
 }
 
 .projects-overview__thumbnail h3:hover {

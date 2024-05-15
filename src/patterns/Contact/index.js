@@ -26,6 +26,15 @@ function Contact({ id }) {
                         className="contact__link"
                     >
                         LinkedIn
+                    </a>{" "}
+                    or on{" "}
+                    <a
+                        href="https://github.com/katharinadobiosch"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="contact__link"
+                    >
+                        GithHub
                     </a>
                     .
                 </p>
