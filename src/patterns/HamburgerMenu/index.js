@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const HamburgerMenu = ({ scrollToSection }) => {
     const handleClick = (id) => {
-        console.log("Clicked on menu item:", id);
         scrollToSection(id);
         setIsOpen(false); // Close the menu
     };

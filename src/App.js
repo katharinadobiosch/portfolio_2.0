@@ -14,13 +14,13 @@ import LegalNotice from "./patterns/LegalNotice";
 
 function App() {
     const scrollToSection = (id) => {
-        console.log("Scrolling to section:", id);
         const element = document.getElementById(id);
-        console.log("Element:", element);
         if (element) {
-            element.scrollIntoView({
+            const headerHeight = 60; // Height of the header
+            const offsetTop = element.offsetTop - headerHeight;
+            window.scrollTo({
+                top: offsetTop,
                 behavior: "smooth",
-                block: "start",
             });
         }
     };
