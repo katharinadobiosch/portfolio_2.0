@@ -16,14 +16,15 @@ const HamburgerMenu = ({ scrollToSection }) => {
     return (
         <div>
             <nav role="navigation">
-                <div id="hamburger-menu" onClick={toggleMenu}>
+                <div className="hamburger-menu" onClick={toggleMenu}>
                     <input type="checkbox" checked={isOpen} readOnly />
                     <span></span>
                     <span></span>
                     <span></span>
                     <ul
-                        id="hamburger-menu__menu"
-                        className={isOpen ? "open" : ""}
+                        className={`hamburger-menu__menu ${
+                            isOpen ? "open" : ""
+                        }`}
                     >
                         <li onClick={() => scrollToSection("home")}>home</li>
                         <li onClick={() => handleClick("about")}>aboutMe</li>

@@ -1,5 +1,4 @@
-
-#hamburger-menu {
+.hamburger-menu {
   display: block;
   position: relative;
   top: 0;
@@ -8,19 +7,17 @@
   user-select: none;
 }
 
-#hamburger-menu a {
+.hamburger-menu a {
   text-decoration: none;
-  color: var(--background);
   transition: color 0.3s ease;
 }
 
-#hamburger-menu a:hover {
-  color: var(--link-hover);
+.hamburger-menu a:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
 }
 
-#hamburger-menu input {
+.hamburger-menu input {
   display: block;
   width: 40px;
   height: 32px;
@@ -33,7 +30,7 @@
   -webkit-touch-callout: none;
 }
 
-#hamburger-menu span {
+.hamburger-menu span {
   display: block;
   width: 33px;
   height: 4px;
@@ -46,30 +43,30 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#hamburger-menu span:first-child {
+.hamburger-menu span:first-child {
   transform-origin: 0% 0%;
 }
 
-#hamburger-menu span:nth-last-child(2) {
+.hamburger-menu span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#hamburger-menu input:checked ~ span {
+.hamburger-menu input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: var(--text);
 }
 
-#hamburger-menu input:checked ~ span:nth-last-child(3) {
+.hamburger-menu input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#hamburger-menu input:checked ~ span:nth-last-child(2) {
+.hamburger-menu input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#hamburger-menu__menu {
+.hamburger-menu__menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -77,7 +74,7 @@
   height: 100%;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: var(--background);
   list-style-type: none;
   -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
@@ -85,11 +82,19 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-hamburger-menu__menu li {
+.hamburger-menu__menu li {
   padding: 10px 0;
   font-size: 22px;
+  color: var(--link);
+  cursor: pointer;
 }
 
-#hamburger-menu input:checked ~ ul {
+.hamburger-menu__menu li:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.hamburger-menu input:checked ~ ul {
   transform: none;
 }
