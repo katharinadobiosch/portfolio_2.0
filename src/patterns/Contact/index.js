@@ -1,8 +1,8 @@
 import SectionFrame from "../SectionFrame";
 
-function Contact() {
+function Contact({ id }) {
     return (
-        <div className="contact">
+        <div className="contact" id={id}>
             <SectionFrame section="drop-me-a-line">
                 {" "}
                 <p>

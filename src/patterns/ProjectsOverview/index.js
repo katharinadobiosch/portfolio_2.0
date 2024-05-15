@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionFrame from "../SectionFrame";
 import Modal from "../Modal";
 
-const ProjectsOverview = () => {
+const ProjectsOverview = ({ id }) => {
     const projects = [
         {
             name: "Burger Creator",
@@ -45,7 +45,7 @@ const ProjectsOverview = () => {
 
     return (
         <SectionFrame section="projects-overview">
-            <div className="projects-overview">
+            <div className="projects-overview" id={id}>
                 {projects.map((project) => (
                     <div
                         className="projects-overview__thumbnail"

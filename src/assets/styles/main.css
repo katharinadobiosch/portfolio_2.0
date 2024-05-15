@@ -476,6 +476,9 @@ button {
 .white-logo {
   filter: invert(100%);
 }
+.contact {
+  height: 100vh;
+}
 .contact__link {
   color: var(--link);
 }

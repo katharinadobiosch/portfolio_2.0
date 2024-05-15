@@ -7,9 +7,9 @@ import oace from "../../assets/WorkExperience/oace-logo.png";
 import taschen from "../../assets/WorkExperience/taschen-logo.svg";
 import umg from "../../assets/WorkExperience/umg-logo.svg.png";
 
-function WorkExperience(props) {
+function WorkExperience({ id }) {
     return (
-        <div className="work-experience">
+        <div className="work-experience" id={id}>
             <SectionFrame section="work-experience">
                 <p className="work-experience__title ">
                     Projects I worked on during my time at{" "}
@@ -29,8 +29,8 @@ function WorkExperience(props) {
                         className="work-experience__link"
                     >
                         Datora WebSystems
-                    </a>.
-                    
+                    </a>
+                    .
                 </p>
                 <div className="work-experience__img-wrapper">
                     <a

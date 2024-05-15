@@ -59,9 +59,9 @@ const skills = [
     // },
 ];
 
-function Skills() {
+function Skills({ id }) {
     return (
-        <div className="skills">
+        <div className="skills" id={id}>
             <SectionFrame section="skills">
                 <ul className="skills__list">
                     {skills.map((skill, index) => (

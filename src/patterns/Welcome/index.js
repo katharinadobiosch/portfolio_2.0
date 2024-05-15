@@ -1,8 +1,8 @@
 import SectionFrame from "../SectionFrame";
 
-function Welcome() {
+function Welcome({ id }) {
     return (
-        <div className="welcome">
+        <div className="welcome" id={id}>
             <SectionFrame section="welcome">
                 <p>
                     Hi, nice to see you. I'm{" "}

@@ -1,5 +1,6 @@
 function SectionFrame(props) {
     const { section } = props;
+
     return (
         <div className="section-frame">
             <div className="section-frame__content-wrapper ">
