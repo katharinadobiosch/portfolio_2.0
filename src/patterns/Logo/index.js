@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
-import * as paths from "../../config/paths";
-
-function Logo() {
+function Logo({ scrollToSection }) {
+    const handleClick = (id) => {
+        scrollToSection(id);
+    };
     return (
         <div className="logo">
-            <div className="logo__content-wrapper">
-                <Link to={paths.HOME}>
-                    <p>Katharina</p>
-                    <p>Dobiosch</p>
-                </Link>
+            <div
+                className="logo__content-wrapper"
+                onClick={() => handleClick("home")}
+            >
+                <p>Katharina</p>
+                <p>Dobiosch</p>
             </div>
         </div>
     );

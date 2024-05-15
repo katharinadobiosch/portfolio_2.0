@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
 const HamburgerMenu = ({ scrollToSection }) => {
-    const handleClick = (id) => {
-        scrollToSection(id);
-        setIsOpen(false); // Close the menu
-    };
-
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const handleClick = (id) => {
+        scrollToSection(id);
+        setIsOpen(false); // Close the menu
     };
 
     return (
@@ -25,21 +25,17 @@ const HamburgerMenu = ({ scrollToSection }) => {
                             isOpen ? "open" : ""
                         }`}
                     >
-                        <li onClick={() => scrollToSection("home")}>home</li>
+                        <li onClick={() => handleClick("home")}>home</li>
                         <li onClick={() => handleClick("about")}>aboutMe</li>
 
-                        <li onClick={() => scrollToSection("skills")}>
-                            skills
-                        </li>
-                        <li
-                            onClick={() => scrollToSection("projects-overview")}
-                        >
+                        <li onClick={() => handleClick("skills")}>skills</li>
+                        <li onClick={() => handleClick("projects-overview")}>
                             personalProjects
                         </li>
-                        <li onClick={() => scrollToSection("work-experience")}>
+                        <li onClick={() => handleClick("work-experience")}>
                             workExperience
                         </li>
-                        <li onClick={() => scrollToSection("contact")}>
+                        <li onClick={() => handleClick("contact")}>
                             dropMeALine
                         </li>
                     </ul>

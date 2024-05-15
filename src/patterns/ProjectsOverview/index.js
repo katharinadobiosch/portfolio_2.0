@@ -44,8 +44,8 @@ const ProjectsOverview = ({ id }) => {
     };
 
     return (
-        <SectionFrame section="projects-overview">
-            <div className="projects-overview" id={id}>
+        <div className="projects-overview" id={id}>
+            <SectionFrame section="projects-overview">
                 {projects.map((project) => (
                     <div
                         className="projects-overview__thumbnail"
@@ -79,9 +79,9 @@ const ProjectsOverview = ({ id }) => {
                             ></div>
                         )}
                     </Modal>
-                )}
-            </div>
-        </SectionFrame>
+                )}{" "}
+            </SectionFrame>
+        </div>
     );
 };
 
