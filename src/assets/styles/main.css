@@ -459,6 +459,20 @@ button {
     padding-top: var(--space-small);
   }
 }
+.projects-overview__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.projects-overview__icons a {
+  width: 2rem;
+  margin: 0 1rem;
+}
+.projects-overview__img {
+  width: 100%;
+}
 .projects-overview__thumbnail h3 {
   cursor: pointer;
   color: var(--link);
@@ -479,13 +493,14 @@ button {
   color: var(--background);
   height: fit-content;
 }
-.projects-overview__thumbnail img {
+.projects-overview__thumbnail > img {
   cursor: pointer;
   width: auto;
   height: 14rem;
+  padding-top: 2rem;
 }
 @media (min-width: 500px) {
-  .projects-overview__thumbnail img {
+  .projects-overview__thumbnail > img {
     padding-bottom: var(--space-small);
   }
 }

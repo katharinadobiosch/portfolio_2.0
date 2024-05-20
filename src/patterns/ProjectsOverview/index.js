@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import SectionFrame from "../SectionFrame";
 import Modal from "../Modal";
 import projects from "./variants";
+import github from "../../assets/ProjectsOverview/github.svg";
+import newWindow from "../../assets/ProjectsOverview/new-window.svg";
 
 const ProjectsOverview = ({ id }) => {
     // const limitDescription = (description) => {
@@ -31,7 +33,28 @@ const ProjectsOverview = ({ id }) => {
                             onClick={() => openModal(project)}
                         >
                             <img src={project.src} alt={project.name} />
+
                             <h3>{project.name}</h3>
+                            <div className="projects-overview__icons">
+                                {project.github && (
+                                    <a href={project.github}>
+                                        <img
+                                            className="projects-overview__img"
+                                            src={github}
+                                            alt="github link"
+                                        />
+                                    </a>
+                                )}
+                                {project.url && (
+                                    <a href={project.url}>
+                                        <img
+                                            className="projects-overview__img"
+                                            src={newWindow}
+                                            alt="open project in new window"
+                                        />
+                                    </a>
+                                )}
+                            </div>
 
                             <div
                                 className="projects-overview__description-short"

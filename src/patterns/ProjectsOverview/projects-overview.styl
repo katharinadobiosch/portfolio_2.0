@@ -30,6 +30,23 @@ $breakpoint-desktop = 1200px;
   }
 }
 
+.projects-overview__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.projects-overview__icons a {
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+.projects-overview__img {
+  width: 100%;
+}
+
 .projects-overview__thumbnail h3 {
   cursor: pointer;
   color: var(--link);
@@ -54,10 +71,11 @@ $breakpoint-desktop = 1200px;
   height: fit-content;
 }
 
-.projects-overview__thumbnail img {
+.projects-overview__thumbnail > img {
   cursor: pointer;
   width: auto;
   height: 14rem;
+  padding-top: 2rem;
 
   @media (min-width: $breakpoint-tablet) {
     padding-bottom: var(--space-small);

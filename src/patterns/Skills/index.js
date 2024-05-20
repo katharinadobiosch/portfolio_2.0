@@ -41,22 +41,22 @@ const skills = [
         name: "Git (GitHub and GitLab)",
         logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
     },
-    // {
-    //     name: "Scrum",
-    //     logo: "https://upload.wikimedia.org/wikipedia/commons/9/94/Scrum-Logo.svg",
-    // },
+    {
+        name: "Scrum",
+        logo: "https://seeklogo.com/images/S/scrum-logo-B057CBD9B8-seeklogo.com.png",
+    },
     {
         name: "Figma",
         logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
     },
     {
         name: "Adobe Creative Cloud",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Adobe_Creative_Cloud_logo.svg",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Adobe_Creative_Cloud_rainbow_icon.svg/2101px-Adobe_Creative_Cloud_rainbow_icon.svg.png",
     },
-    // {
-    //     name: "Liquid",
-    //     logo: "https://upload.wikimedia.org/wikipedia/commons/7/73/Shopify_logo.png",
-    // },
+    {
+        name: "Liquid",
+        logo: "https://assets-global.website-files.com/64be309a0c8ae7454454fcef/653932043d90a3fa696fd68a_liquid-logo-text.png",
+    },
 ];
 
 function Skills({ id }) {
