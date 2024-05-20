@@ -473,6 +473,7 @@ button {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding: 0 1rem;
 }
 .projects-overview__description-long {
   color: var(--background);
@@ -480,8 +481,8 @@ button {
 }
 .projects-overview__thumbnail img {
   cursor: pointer;
-  width: 90%;
-  height: auto;
+  width: auto;
+  height: 14rem;
 }
 @media (min-width: 500px) {
   .projects-overview__thumbnail img {

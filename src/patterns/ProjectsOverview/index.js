@@ -4,6 +4,10 @@ import Modal from "../Modal";
 import projects from "./variants";
 
 const ProjectsOverview = ({ id }) => {
+    // const limitDescription = (description) => {
+    //     const projects.description = description;
+    // }
+
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
@@ -32,7 +36,7 @@ const ProjectsOverview = ({ id }) => {
                             <div
                                 className="projects-overview__description-short"
                                 dangerouslySetInnerHTML={{
-                                    __html: project.description,
+                                    __html: `${project.description}`,
                                 }}
                             ></div>
                         </div>
