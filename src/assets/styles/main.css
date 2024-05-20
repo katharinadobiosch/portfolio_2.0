@@ -72,71 +72,22 @@ main {
     padding: 0 10%;
   }
 }
-a {
-  text-decoration: inherit;
-  color: currentColor;
-}
-input,
-textarea {
-  background-color: var(--primary-neutral);
-  color: var(--secondary-dark);
-  font-weight: var(--font-weight-light);
-  font-family: var(--font-family-regular);
-  line-height: 2;
-  border: 1px solid var(--accent-light);
-  padding: 0.25rem 0.75rem;
-  font-size: 1.4rem;
-}
-input:focus,
-textarea:focus {
-  outline: 0;
-}
-select {
-  display: inline-block;
-  width: fit-content;
-  height: 3.4rem;
-  border-radius: 500px;
-  border: 1px solid var(--primary-dark);
-  color: var(--primary-dark);
-  background-color: var(--primary-neutral);
-  appearance: none;
-  background-repeat: no-repeat;
-  background-position: right 2rem center;
-  padding: 0 4.8rem 0 3.2rem;
-  background-size: 12px;
-}
-select:disabled {
-  border-color: var(--secondary-light);
-  color: var(--secondary-light);
-  background-image: none;
-  padding: 0 3.2rem;
-}
-.html-editor-base-style a {
-  color: $color-orange;
-  text-decoration: none;
-}
-.html-editor-base-style b,
-.html-editor-base-style strong {
+b,
+strong {
   font-weight: bold;
 }
-.html-editor-base-style em {
+em {
   font-style: italic;
 }
-.html-editor-base-style p {
+p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-.html-editor-base-style s {
-  text-decoration: line-through;
-}
-.html-editor-base-style u {
-  text-decoration: underline;
-}
-.html-editor-base-style ul,
-.html-editor-base-style ol {
+ul,
+ol {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -144,13 +95,13 @@ select:disabled {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
-.html-editor-base-style ul {
+ul {
   list-style-type: disc;
 }
-.html-editor-base-style ol {
+ol {
   list-style-type: decimal;
 }
-.html-editor-base-style li {
+li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
@@ -324,13 +275,6 @@ button {
   --z-index-overlay: 60;
   --z-index-high: 70;
   --z-index-highest: 100;
-}
-.test500 {
-  background: #f00;
-  font-family: SourceCodePro-Regular;
-}
-.test600 {
-  background: #00f;
 }
 .test500 {
   background: #f00;
@@ -532,7 +476,6 @@ button {
 }
 .projects-overview__description-long {
   color: var(--background);
-  border: 5px solid #f00;
   height: fit-content;
 }
 .projects-overview__thumbnail img {
@@ -547,6 +490,18 @@ button {
 }
 .projects-overview__thumbnail img:hover {
   transform: scale(1.1);
+}
+strong {
+  font-weight: bold;
+}
+ul,
+ol {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 .modal {
   position: fixed;
@@ -574,7 +529,7 @@ button {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Schatten für das Modal */
   width: 100%;
-  max-height: 90%;
+  max-height: 80%;
   overflow: auto;
 }
 @media (min-width: 769px) {

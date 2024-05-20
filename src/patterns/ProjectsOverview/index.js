@@ -45,22 +45,20 @@ const ProjectsOverview = ({ id }) => {
                                 <button onClose={closeModal}>X</button>
                             </div>
                             {selectedProject.url && (
-                                <>
-                                    <iframe
-                                        src={selectedProject.url}
-                                        title={selectedProject.name}
-                                        width="100%"
-                                        height="500px"
-                                        frameBorder="0"
-                                    />
-                                    <div
-                                        className="projects-overview__description-long"
-                                        dangerouslySetInnerHTML={{
-                                            __html: selectedProject.description,
-                                        }}
-                                    ></div>
-                                </>
+                                <iframe
+                                    src={selectedProject.url}
+                                    title={selectedProject.name}
+                                    width="100%"
+                                    height="500px"
+                                    frameBorder="0"
+                                />
                             )}
+                            <div
+                                className="projects-overview__description-long"
+                                dangerouslySetInnerHTML={{
+                                    __html: selectedProject.description,
+                                }}
+                            ></div>
                         </Modal>
                     )}{" "}
                 </div>
