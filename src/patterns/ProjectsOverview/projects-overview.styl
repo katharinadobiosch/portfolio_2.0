@@ -1,5 +1,5 @@
-$breakpoint-tablet = 481px;
-$breakpoint-desktop = 769px;
+$breakpoint-tablet = 500px;
+$breakpoint-desktop = 1200px;
 
 .projects-overview {
   width: 100%;
@@ -7,6 +7,7 @@ $breakpoint-desktop = 769px;
 
 .projects-overview__wrapper {
   display: flex;
+  // justify-content: center;
   flex-wrap: wrap;
   padding-top: var(--space-small);
 }
@@ -42,11 +43,17 @@ $breakpoint-desktop = 769px;
   text-decoration-style: wavy;
 }
 
-.projects-overview__description {
+.projects-overview__description-short {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.projects-overview__description-long {
+  color: var(--background);
+  border: 5px solid red;
+  height: fit-content
 }
 
 .projects-overview__thumbnail img {

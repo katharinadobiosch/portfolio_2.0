@@ -30,7 +30,7 @@ const ProjectsOverview = ({ id }) => {
                             <h3>{project.name}</h3>
 
                             <div
-                                className="projects-overview__description"
+                                className="projects-overview__description-short"
                                 dangerouslySetInnerHTML={{
                                     __html: project.description,
                                 }}
@@ -44,20 +44,22 @@ const ProjectsOverview = ({ id }) => {
                                 <h1>{selectedProject.name}</h1>
                                 <button onClose={closeModal}>X</button>
                             </div>
-                            {selectedProject.url ? (
-                                <iframe
-                                    src={selectedProject.url}
-                                    title={selectedProject.name}
-                                    width="100%"
-                                    height="500px"
-                                    frameBorder="0"
-                                />
-                            ) : (
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: selectedProject.description,
-                                    }}
-                                ></div>
+                            {selectedProject.url && (
+                                <>
+                                    <iframe
+                                        src={selectedProject.url}
+                                        title={selectedProject.name}
+                                        width="100%"
+                                        height="500px"
+                                        frameBorder="0"
+                                    />
+                                    <div
+                                        className="projects-overview__description-long"
+                                        dangerouslySetInnerHTML={{
+                                            __html: selectedProject.description,
+                                        }}
+                                    ></div>
+                                </>
                             )}
                         </Modal>
                     )}{" "}

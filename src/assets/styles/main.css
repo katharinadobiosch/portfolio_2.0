@@ -503,13 +503,13 @@ button {
   border: 1px solid var(--text);
   margin: 1rem;
 }
-@media (min-width: 481px) {
+@media (min-width: 500px) {
   .projects-overview__thumbnail {
     width: 45%;
     padding-top: var(--space-small);
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
   .projects-overview__thumbnail {
     width: 30%;
     padding-top: var(--space-small);
@@ -524,18 +524,23 @@ button {
   text-decoration: underline;
   text-decoration-style: wavy;
 }
-.projects-overview__description {
+.projects-overview__description-short {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.projects-overview__description-long {
+  color: var(--background);
+  border: 5px solid #f00;
+  height: fit-content;
 }
 .projects-overview__thumbnail img {
   cursor: pointer;
   width: 90%;
   height: auto;
 }
-@media (min-width: 481px) {
+@media (min-width: 500px) {
   .projects-overview__thumbnail img {
     padding-bottom: var(--space-small);
   }
