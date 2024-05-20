@@ -1,36 +1,9 @@
 import React, { useState } from "react";
 import SectionFrame from "../SectionFrame";
 import Modal from "../Modal";
+import projects from "./variants";
 
 const ProjectsOverview = ({ id }) => {
-    const projects = [
-        {
-            name: "Burger Creator",
-            url: "https://katharinadobiosch-burger-builder.netlify.app/",
-            src: require("../../assets/ProjectsOverview/burger-creator.png"),
-        },
-        {
-            name: "Adventskalender",
-            url: "https://katharinadobiosch-adventcalendar.netlify.app/",
-            src: require("../../assets/ProjectsOverview/advent-calendar.png"),
-        },
-        {
-            name: "Freshbnb",
-            url: "https://freshbnb.vercel.app",
-            src: require("../../assets/ProjectsOverview/freshbnb.png"),
-        },
-        {
-            name: "Press Clippings",
-            content: `<p>Press Clippings ist eine Webanwendung, die es ermöglicht, Presseartikel zu verwalten.</p>`,
-            src: require("../../assets/ProjectsOverview/freshbnb.png"),
-        },
-        {
-            name: "Petstagram",
-            content: `<p></p>`,
-            src: require("../../assets/ProjectsOverview/petstagram.png"),
-        },
-    ];
-
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
@@ -55,6 +28,13 @@ const ProjectsOverview = ({ id }) => {
                         >
                             <img src={project.src} alt={project.name} />
                             <h3>{project.name}</h3>
+
+                            <div
+                                className="projects-overview__description"
+                                dangerouslySetInnerHTML={{
+                                    __html: project.description,
+                                }}
+                            ></div>
                         </div>
                     ))}
                     {/* Modal anzeigen, wenn modalOpen true ist */}
@@ -75,7 +55,7 @@ const ProjectsOverview = ({ id }) => {
                             ) : (
                                 <div
                                     dangerouslySetInnerHTML={{
-                                        __html: selectedProject.content,
+                                        __html: selectedProject.description,
                                     }}
                                 ></div>
                             )}

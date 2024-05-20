@@ -1,3 +1,6 @@
+$breakpoint-tablet = 481px;
+$breakpoint-desktop = 769px;
+
 .projects-overview {
   width: 100%;
 }
@@ -10,19 +13,27 @@
 
 .projects-overview__thumbnail {
   // border: 5px solid red;
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: var(--space-small);
   border: 1px solid var(--text);
   margin: 1rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 45%;
+    padding-top: var(--space-small);
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 30%;
+    padding-top: var(--space-small);
+  }
 }
 
 .projects-overview__thumbnail h3 {
   cursor: pointer;
   color: var(--link);
-  padding-bottom: var(--space-medium);
 }
 
 .projects-overview__thumbnail h3:hover {
@@ -31,11 +42,21 @@
   text-decoration-style: wavy;
 }
 
+.projects-overview__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .projects-overview__thumbnail img {
   cursor: pointer;
   width: 90%;
   height: auto;
-  padding-bottom: var(--space-small);
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: var(--space-small);
+  }
 }
 
 .projects-overview__thumbnail img:hover {
