@@ -6,14 +6,13 @@ import github from "../../assets/ProjectsOverview/github.svg";
 import newWindow from "../../assets/ProjectsOverview/new-window.svg";
 
 const ProjectsOverview = ({ id }) => {
-    // const limitDescription = (description) => {
-    //     const projects.description = description;
-    // }
-
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
 
-    const openModal = (project) => {
+    const openModal = (project, e) => {
+        if (e.target.classList.contains("projects-overview__img")) {
+            return;
+        }
         setSelectedProject(project);
         setModalOpen(true);
     };
@@ -30,7 +29,7 @@ const ProjectsOverview = ({ id }) => {
                         <div
                             className="projects-overview__thumbnail"
                             key={project.name}
-                            onClick={() => openModal(project)}
+                            onClick={(e) => openModal(project, e)}
                         >
                             <img src={project.src} alt={project.name} />
 
