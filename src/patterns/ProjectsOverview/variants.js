@@ -75,7 +75,29 @@ Future improvements for FreshBnb include adding user authentication, implementin
         src: press,
 
         description: `<p>
-        Press Clippings is a web application that allows users to create and manage a collection of press clippings. The application is designed to help users organize and store articles, reviews, and other press mentions in one convenient location. <br><br>
+    Press Clippings is a sophisticated news aggregation platform built with modern web technologies such as React, TypeScript, Prisma, and Zod. The platform not only aggregates news from various sources but also allows users to contribute their own articles, creating a diverse and interactive news experience.
+<br><br>
+
+Upon landing on the home page, users are presented with a collection of news articles fetched from various sources. The fetching of posts is handled by the fetchPosts utility, ensuring a dynamic and real-time user experience. Each post includes the article's title, content, and source, providing users with a comprehensive overview of each news item.
+<br><br>
+
+One of the key features of Press Clippings is the AddPostModal component. This component allows users to contribute their own news articles to the platform. Users can input the title, content, and source of their article, fostering a sense of community and interaction among users.
+<br><br>
+
+The application also includes a Filters component, which allows users to filter the displayed news articles based on their preferences. This feature enhances the user experience by allowing users to tailor the content to their interests.
+<br><br>
+
+The HomePage component, which serves as the main entry point of the application, manages the state of the posts and filters using React's useState hook. This ensures that the state of the application is always synchronized with the user's interactions.
+<br><br>
+
+The application leverages Prisma, a next-generation ORM, for database management. Prisma's type-safe database access and powerful query capabilities ensure efficient and secure data handling. Additionally, Zod is used for schema validation, ensuring the integrity of the data throughout the application.
+<br><br>
+
+Press Clippings showcases my skills in React, TypeScript, Prisma, Zod, and CSS. It demonstrates my ability to create dynamic and interactive web applications, manage state with React hooks, handle database operations with Prisma, validate schemas with Zod, and build user-friendly interfaces.
+<br><br>
+
+Future improvements for Press Clippings include adding user authentication, implementing a more robust error handling system, and expanding the customization options for the user-generated posts.
+
         </p>`,
     },
     {
