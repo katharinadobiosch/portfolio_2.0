@@ -21,7 +21,7 @@ function About({ id }) {
                 <p>
                     <ul>
                         <li>
-                            <span className="about__keywords">
+                            <span className="about__keywords__heading">
                                 Shopify Advent Calendar App
                             </span>
                             : Independently created and set to release on the
@@ -32,9 +32,9 @@ function About({ id }) {
                             animations, and API setup.
                         </li>
                         <li>
-                            <span className="about__keywords">
+                            <span className="about__keywords__heading">
                                 E-commerce Projects
-                            </span>{" "}
+                            </span>
                             : Contributed to various projects within{" "}
                             <span className="about__keywords">Scrum teams</span>
                             . , focusing on enhancing user experience and
@@ -47,11 +47,9 @@ function About({ id }) {
                 <p>
                     <ul>
                         <li>
-                            <span className="about__keywords">
-                                Visual Merchandiser
-                            </span>{" "}
-                            and{" "}
-                            <span className="about__keywords">Store Owner</span>
+                            <span className="about__keywords__heading">
+                                Visual Merchandiser and Store Owner
+                            </span>
                             : Built strong relationships with{" "}
                             <span className="about__keywords">brands</span> and{" "}
                             <span className="about__keywords">suppliers</span> ,
@@ -75,7 +73,7 @@ function About({ id }) {
                     <ul>
                         {" "}
                         <li>
-                            <span className="about__keywords">
+                            <span className="about__keywords__heading">
                                 {" "}
                                 Diploma in Design
                             </span>
@@ -98,8 +96,8 @@ function About({ id }) {
                             .
                         </li>
                         <li>
-                            <span className="about__keywords">
-                                Certifications{" "}
+                            <span className="about__keywords__heading">
+                                Certifications
                             </span>
                             :{" "}
                             <span className="about__keywords">
@@ -118,12 +116,17 @@ function About({ id }) {
                 <p>
                     <ul>
                         <li>
-                            Frontend Development: Specialize in creating
-                            responsive designs, implementing animations, and
-                            setting up APIs.
+                            <span className="about__keywords__heading">
+                                Frontend Development
+                            </span>
+                            : Specialize in creating responsive designs,
+                            implementing animations, and setting up APIs.
                         </li>
                         <li>
-                            Languages: Fluent in{" "}
+                            <span className="about__keywords__heading">
+                                Languages
+                            </span>
+                            : Fluent in{" "}
                             <span className="about__keywords">German</span>,
                             proficient in{" "}
                             <span className="about__keywords">English</span>,

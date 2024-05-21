@@ -81,7 +81,7 @@ em {
 }
 p {
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: 0.5rem;
   margin-block-end: 1em;
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -367,11 +367,17 @@ button {
   color: var(--green);
 }
 .section-frame p {
-  padding: var(--space-small) 0;
+  padding: var(--space-small) 0 var(--space-medium) 0;
   line-height: 3.3rem;
+}
+.about p {
+  padding-top: 0px;
 }
 .about__keywords {
   color: var(--yellow);
+}
+.about__keywords__heading {
+  color: var(--green);
 }
 .skills__list {
   list-style-type: none;
@@ -510,7 +516,7 @@ strong {
 ul,
 ol {
   display: block;
-  margin-block-start: 1em;
+  margin-block-start: 0.5rem;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
