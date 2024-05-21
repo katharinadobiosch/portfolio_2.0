@@ -47,7 +47,7 @@ const skills = [
     },
     {
         name: "Figma",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+        logo: "https://static-00.iconduck.com/assets.00/apps-figma-icon-2048x2048-ctjj5ab7.png",
     },
     {
         name: "Adobe Creative Cloud",
