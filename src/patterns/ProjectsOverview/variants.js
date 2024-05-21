@@ -30,6 +30,7 @@ Future improvements for the Burger Builder include adding a backend to store ord
         src: require("../../assets/ProjectsOverview/advent-calendar.png"),
 
         description: `<p>
+        I've developed the original version of this Advent Calendar in Liquid for Shopify. It's set to be released this year on the Shopify App Store. Behind each door, products from the user's own shop can be featured, utilizing metafields for seamless integration. For the purpose of my portfolio, I swiftly recreated the Advent calendar in React to illustrate its basic functionality.<br><br>
         This project is an interactive Advent Calendar built using React. The calendar is designed to bring the joy of the holiday season to users in a digital format. Each day of December, up to the 24th, users can open a new door on the calendar, just like a traditional Advent calendar.
 <br><br>
 The application is built with a clean and intuitive user interface. The main component, Door, generates the Advent calendar boxes dynamically based on the current date. Each box is a clickable link that leads to a unique page, creating a surprise for the user each day.
@@ -39,8 +40,8 @@ The Door component uses React's state and effect hooks to manage and update th
 In addition to the Advent calendar, the application also features a Snow component, adding a festive touch to the application with a snowfall effect.
 <br><br>
 This project showcases my skills in React, JavaScript, and CSS. It demonstrates my ability to create dynamic and interactive web applications, manage state with React hooks, and build user-friendly interfaces.
-<br><br>
-Moreover, I've also developed the original version of this Advent Calendar in Liquid for Shopify. It's set to be released this year on the Shopify App Store. Behind each door, products from the user's own shop can be featured, utilizing metafields for seamless integration. For the purpose of my portfolio, I swiftly recreated the Advent calendar in React to illustrate its basic functionality.
+
+
 </p>`,
     },
     {
