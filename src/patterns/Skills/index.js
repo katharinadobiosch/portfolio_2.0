@@ -23,7 +23,7 @@ const skills = [
     },
     {
         name: "Next.js",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+        logo: "https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png",
     },
     // {
     //     name: "Agile Web Development",
@@ -31,7 +31,7 @@ const skills = [
     // },
     {
         name: "Shopify (including Liquid)",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Shopify_logo.svg/800px-Shopify_logo.svg.png",
+        logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg",
     },
     // {
     //     name: "Responsive Design",
@@ -39,7 +39,7 @@ const skills = [
     // },
     {
         name: "Git (GitHub and GitLab)",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png",
     },
     {
         name: "Scrum",

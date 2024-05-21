@@ -34,7 +34,7 @@ function Contact({ id }) {
                         rel="noreferrer"
                         className="contact__link"
                     >
-                        GithHub
+                        GitHub
                     </a>
                     .
                 </p>

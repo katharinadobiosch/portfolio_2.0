@@ -470,9 +470,6 @@ button {
   width: 2rem;
   margin: 0 1rem;
 }
-.projects-overview__img {
-  width: 100%;
-}
 .projects-overview__thumbnail h3 {
   cursor: pointer;
   color: var(--link);

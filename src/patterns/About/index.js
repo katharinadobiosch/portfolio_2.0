@@ -1,7 +1,6 @@
 import SectionFrame from "../SectionFrame";
 
 function About({ id }) {
-
     return (
         <div className="about" id={id}>
             <SectionFrame section="about-me">
@@ -17,76 +16,134 @@ function About({ id }) {
                     journey into web development has been driven by my love for
                     intuitive user experiences and eye-catching designs.
                 </p>
+                <br />
+                <strong>Key Achievements</strong>
                 <p>
-                    One of my recent accomplishments includes independently
-                    creating a{" "}
-                    <span className="about__keywords">
-                        Shopify Advent Calendar App
-                    </span>
-                    , which will be released on the{" "}
-                    <span className="about__keywords">Shopify App Store</span>{" "}
-                    this year. I've also contributed to various{" "}
-                    <span className="about__keywords">E-commerce projects</span>{" "}
-                    within agile{" "}
-                    <span className="about__keywords">Scrum teams</span>.
+                    <ul>
+                        <li>
+                            <span className="about__keywords">
+                                Shopify Advent Calendar App
+                            </span>
+                            : Independently created and set to release on the
+                            <span className="about__keywords">
+                                Shopify App Store
+                            </span>{" "}
+                            this year. Enjoyed working on responsive design,
+                            animations, and API setup.
+                        </li>
+                        <li>
+                            <span className="about__keywords">
+                                E-commerce Projects
+                            </span>{" "}
+                            : Contributed to various projects within{" "}
+                            <span className="about__keywords">Scrum teams</span>
+                            . , focusing on enhancing user experience and
+                            implementing efficient solutions.
+                        </li>
+                    </ul>
                 </p>
+                <br />
+                <strong>Professional Background</strong>
                 <p>
-                    Before transitioning to tech, I worked as a{" "}
-                    <span className="about__keywords">Visual Merchandiser</span>{" "}
-                    and <span className="about__keywords">Store Owner</span>,
-                    where I built strong relationships with{" "}
-                    <span className="about__keywords">brands</span> and{" "}
-                    <span className="about__keywords">suppliers</span> while
-                    ensuring excellent{" "}
-                    <span className="about__keywords">
-                        customer experiences
-                    </span>
-                    . My background in visual merchandising and owning a kids
-                    concept store has equipped me with both{" "}
-                    <span className="about__keywords">technical skills</span>{" "}
-                    and strong management abilities. This unique blend enables
-                    me to approach Frontend development challenges with a
-                    customer-centric mindset, ensuring effective solutions that
-                    prioritize user experience.
-                </p>
+                    <ul>
+                        <li>
+                            <span className="about__keywords">
+                                Visual Merchandiser
+                            </span>{" "}
+                            and{" "}
+                            <span className="about__keywords">Store Owner</span>
+                            : Built strong relationships with{" "}
+                            <span className="about__keywords">brands</span> and{" "}
+                            <span className="about__keywords">suppliers</span> ,
+                            ensuring excellent{" "}
+                            <span className="about__keywords">
+                                customer experiences
+                            </span>
+                            . This role honed my{" "}
+                            <span className="about__keywords">
+                                technical skills
+                            </span>{" "}
+                            and management abilities, allowing me to approach
+                            frontend development with a customer-centric
+                            mindset.
+                        </li>
+                    </ul>
+                </p>{" "}
+                <br />
+                <strong>Education and Certifications</strong>
                 <p>
-                    In addition to my professional experiences, I hold a{" "}
-                    <span className="about__keywords">diploma</span> in{" "}
-                    <span className="about__keywords">Design</span> from{" "}
-                    <span className="about__keywords">
-                        Fachhochschule Niederrhein
-                    </span>
-                    , with a focus on{" "}
-                    <span className="about__keywords">
-                        communication design
-                    </span>
-                    , <span className="about__keywords">media creation</span>,
-                    and{" "}
-                    <span className="about__keywords">visual storytelling</span>
-                    . I'm also certified in{" "}
-                    <span className="about__keywords">
-                        Full Stack Web Development
-                    </span>{" "}
-                    and{" "}
-                    <span className="about__keywords">Retail Management</span>.
-                </p>
+                    <ul>
+                        {" "}
+                        <li>
+                            <span className="about__keywords">
+                                {" "}
+                                Diploma in Design
+                            </span>
+                            :{" "}
+                            <span className="about__keywords">
+                                Fachhochschule Niederrhein
+                            </span>
+                            , focusing on{" "}
+                            <span className="about__keywords">
+                                communication design
+                            </span>
+                            ,{" "}
+                            <span className="about__keywords">
+                                media creation
+                            </span>
+                            , and{" "}
+                            <span className="about__keywords">
+                                visual storytelling
+                            </span>
+                            .
+                        </li>
+                        <li>
+                            <span className="about__keywords">
+                                Certifications{" "}
+                            </span>
+                            :{" "}
+                            <span className="about__keywords">
+                                Full Stack Web Development
+                            </span>{" "}
+                            and{" "}
+                            <span className="about__keywords">
+                                Retail Management
+                            </span>
+                            .
+                        </li>
+                    </ul>
+                </p>{" "}
+                <br />
+                <strong>Technical Skills and Expertise</strong>
+                <p>
+                    <ul>
+                        <li>
+                            Frontend Development: Specialize in creating
+                            responsive designs, implementing animations, and
+                            setting up APIs.
+                        </li>
+                        <li>
+                            Languages: Fluent in{" "}
+                            <span className="about__keywords">German</span>,
+                            proficient in{" "}
+                            <span className="about__keywords">English</span>,
+                            and with a solid understanding of{" "}
+                            <span className="about__keywords">Polish</span>.
+                        </li>
+                    </ul>
+                </p>{" "}
+                <br />
+                <strong>Personal Approach</strong>
                 <p>
                     My passion lies squarely in frontend development, where I
                     thrive on bringing{" "}
                     <span className="about__keywords">digital visions</span> to
-                    life and enhancing user experiences. Fluent in{" "}
-                    <span className="about__keywords">German</span>, proficient
-                    in <span className="about__keywords">English</span>, and
-                    with a solid understanding of{" "}
-                    <span className="about__keywords">Polish</span>, I am
-                    comfortable in{" "}
+                    life and enhancing user experiences. Comfortable in{" "}
                     <span className="about__keywords">
                         multicultural environments
-                    </span>{" "}
-                    and enjoy working with diverse teams.
-                </p>
-                <p>
-                    Let's work together to create innovative solutions where{" "}
+                    </span>
+                    , I enjoy working with diverse teams to create innovative
+                    solutions where{" "}
                     <span className="about__keywords">creativity</span> knows no
                     bounds, and every line of code tells a story of{" "}
                     <span className="about__keywords">progress</span> and{" "}

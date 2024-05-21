@@ -75,7 +75,7 @@ Future improvements for FreshBnb include adding user authentication, implementin
         src: press,
 
         description: `<p>
-    Press Clippings is a sophisticated news aggregation platform built with modern web technologies such as React, TypeScript, Prisma, and Zod. The platform not only aggregates news from various sources but also allows users to contribute their own articles, creating a diverse and interactive news experience.
+Press Clippings is a sophisticated news aggregation platform built with modern web technologies such as React, TypeScript, Prisma, and Zod. The platform not only aggregates news from various sources but also allows users to contribute their own articles, creating a diverse and interactive news experience.
 <br><br>
 
 Upon landing on the home page, users are presented with a collection of news articles fetched from various sources. The fetching of posts is handled by the fetchPosts utility, ensuring a dynamic and real-time user experience. Each post includes the article's title, content, and source, providing users with a comprehensive overview of each news item.
