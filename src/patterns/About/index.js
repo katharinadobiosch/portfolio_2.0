@@ -88,7 +88,7 @@ function About({ id }) {
                             </span>
                             ,{" "}
                             <span className="about__keywords">
-                                media creation
+                                media creation{" "}
                             </span>
                             and{" "}
                             <span className="about__keywords">
