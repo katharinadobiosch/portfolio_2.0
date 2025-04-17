@@ -56,13 +56,6 @@ const UnsereTiere = () => {
     };
   }, []);
 
-  const handleNameSubmit = () => {
-    if (username.trim()) {
-      localStorage.setItem("username", username.trim());
-      setShowNameInput(false);
-    }
-  };
-
   const addAnimal = async () => {
     const trimmed = input.trim().toLowerCase();
     if (!trimmed) return;
