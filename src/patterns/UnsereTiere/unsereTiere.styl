@@ -1,0 +1,143 @@
+.unsere-tiere {
+    &__container {
+        padding: 2rem;
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        background: var(--background);
+        color: var(--text);
+    }
+
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__name {
+        font-size: 1rem;
+    }
+
+    &__tag {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        background: var(--neutral-20);
+        color: var(--background);
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--pink);
+    }
+
+    &__input-group {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        flex: 1;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--neutral-50);
+        border-radius: 8px 0 0 8px;
+        outline: none;
+        background: var(--neutral-00);
+        color: var(--background);
+    }
+
+    &__button {
+        padding: 0.5rem 1rem;
+        background-color: var(--green);
+        color: var(--background);
+        border: none;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: var(--link-hover);
+        }
+    }
+
+    &__message {
+        color: var(--error);
+        margin-bottom: 1rem;
+    }
+
+    &__count {
+        margin-bottom: 1rem;
+        color: var(--yellow);
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        background: var(--neutral-80);
+        color: var(--neutral-10);
+    }
+
+    &__name-button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        margin: 0.25rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .name-kathi {
+        background: var(--yellow);
+        color: var(--background);
+    }
+
+    .name-bob {
+        background: var(--link);
+        color: var(--background);
+    }
+
+    .name-jana {
+        background: var(--pink);
+        color: var(--background);
+    }
+}
+
+@media (max-width: 480px) {
+    .unsere-tiere__container {
+        padding: 1rem;
+    }
+
+    .unsere-tiere__title {
+        font-size: 1.5rem;
+    }
+
+    .unsere-tiere__input-group {
+        flex-direction: column;
+    }
+
+    .unsere-tiere__input {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .unsere-tiere__button {
+        border-radius: 0 0 8px 8px;
+        width: 100%;
+    }
+}

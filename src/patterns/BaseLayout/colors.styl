@@ -1,13 +1,11 @@
 // define Custom Properties for colors
-projectColors = json('/Users/kathi/Documents/_coding/portfolio_2.0/config/colors.json', { hash: true })
+projectColors = json('../../config/colors.json', { hash: true });
+colors = projectColors;
 
-  colors = projectColors
-
-
-:root
-  for color in colors
-    name = colors[color]["variableName"]
-    value = colors[color]["value"]
-
-    {name} value
-
+:root {
+  for color in colors {
+    name = colors[color]['variableName'];
+    value = colors[color]['value'];
+    {name}: value;
+  }
+}
