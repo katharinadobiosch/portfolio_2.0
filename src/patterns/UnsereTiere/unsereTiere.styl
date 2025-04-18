@@ -1,42 +1,15 @@
+/* Komplett aufgeräumtes und optimiertes CSS */
 .unsere-tiere {
     &__container {
         padding: 2rem;
-        font-family: Arial, sans-serif;
         max-width: 600px;
         margin: 0 auto;
         background: var(--background);
         color: var(--text);
     }
 
-    &__list-item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.2rem;
-    }
-
-    &__list-item {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    &__name {
-        font-size: 1rem;
-    }
-
-    &__tag {
-        font-size: 0.75rem;
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
-        background: var(--neutral-20);
-        color: var(--background);
-        font-weight: bold;
-        text-transform: capitalize;
-    }
-
     &__title {
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
         color: var(--pink);
     }
@@ -44,6 +17,10 @@
     &__input-group {
         display: flex;
         margin-bottom: 1rem;
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
     }
 
     &__input {
@@ -54,6 +31,10 @@
         outline: none;
         background: var(--neutral-00);
         color: var(--background);
+
+        @media (max-width: 480px) {
+            border-radius: 8px 8px 0 0;
+        }
     }
 
     &__button {
@@ -68,6 +49,11 @@
         &:hover {
             background-color: var(--link-hover);
         }
+
+        @media (max-width: 480px) {
+            border-radius: 0 0 8px 8px;
+            width: 100%;
+        }
     }
 
     &__message {
@@ -78,6 +64,7 @@
     &__count {
         margin-bottom: 1rem;
         color: var(--yellow);
+        font-size: 1.1rem;
     }
 
     &__list {
@@ -86,37 +73,185 @@
     }
 
     &__list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
         margin-bottom: 0.5rem;
         padding: 0.5rem 1rem;
         border-radius: 6px;
         background: var(--neutral-80);
         color: var(--neutral-10);
+        font-size: 1.1rem;
     }
 
-    &__name-button {
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        margin: 0.25rem;
-        cursor: pointer;
+    &__name {
+        font-size: 1.2rem;
+    }
+
+    &__tag {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        background: var(--neutral-20);
+        color: var(--background);
         font-weight: bold;
+        text-transform: capitalize;
     }
 
-    .name-kathi {
-        background: var(--yellow);
+    &__user-initial {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        font-weight: bold;
         color: var(--background);
     }
 
-    .name-bob {
-        background: var(--link);
-        color: var(--background);
+    &__actions {
+        margin-left: auto;
+        display: flex;
+        gap: 0.3rem;
     }
 
-    .name-jana {
-        background: var(--pink);
-        color: var(--background);
+    &__user-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        background: var(--neutral-20);
+        box-shadow: 0 0 0 1px var(--neutral-50);
+        width: fit-content;
     }
+
+    &__logout-button {
+        background: none;
+        border: none;
+        color: inherit;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+
+    &__name-dialog {
+        margin-bottom: 2rem;
+    }
+
+    &__name-options {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__tag-option {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        padding: 0.4rem 0.8rem;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        color: var(--background);
+        transition: transform 0.15s ease;
+        min-width: 8rem;
+    }
+
+    &__tag-option:hover {
+        transform: scale(1.05);
+    }
+
+    &__stats {
+        margin-top: 2rem;
+        background: var(--neutral-80);
+        padding: 1rem;
+        border-radius: 8px;
+        color: var(--neutral-10);
+        margin-bottom: 4rem;
+    }
+
+    &__stats h3 {
+        margin-bottom: 1rem;
+    }
+
+    &__stats ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__stats li {
+        margin-bottom: 0.3rem;
+    }
+
+    &__stats-item {
+        margin-bottom: 1rem;
+    }
+
+    &__stats-label {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    &__stats-bar {
+        background: var(--neutral-60);
+        border-radius: 6px;
+        height: 8px;
+        overflow: hidden;
+    }
+
+    &__stats-fill {
+        height: 100%;
+        transition: width 0.4s ease;
+        border-radius: 6px;
+    }
+}
+
+/* Rangfarben */
+.unsere-tiere__stats li:nth-child(1) {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.unsere-tiere__stats li:nth-child(2) {
+    color: var(--neutral-50);
+}
+
+.unsere-tiere__stats li:nth-child(3) {
+    color: #cd7f32;
+}
+
+/* Farben pro Name */
+.tag-kathi {
+    background: var(--yellow);
+}
+
+.tag-jana {
+    background: var(--pink);
+}
+
+.tag-bob {
+    background: var(--link);
+}
+
+.user-kathi {
+    background: var(--yellow);
+    color: var(--background);
+}
+
+.user-jana {
+    background: var(--pink);
+    color: var(--neutral-00);
+}
+
+.user-bob {
+    background: var(--link);
+    color: var(--background);
 }
 
 @media (max-width: 480px) {
@@ -125,19 +260,6 @@
     }
 
     .unsere-tiere__title {
-        font-size: 1.5rem;
-    }
-
-    .unsere-tiere__input-group {
-        flex-direction: column;
-    }
-
-    .unsere-tiere__input {
-        border-radius: 8px 8px 0 0;
-    }
-
-    .unsere-tiere__button {
-        border-radius: 0 0 8px 8px;
-        width: 100%;
+        font-size: 1.8rem;
     }
 }
