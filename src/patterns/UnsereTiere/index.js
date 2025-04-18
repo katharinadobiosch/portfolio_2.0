@@ -7,6 +7,8 @@ const UnsereTiere = () => {
   const [message, setMessage] = useState("");
   const [posterStats, setPosterStats] = useState([]);
   const predefinedUsers = ["Kathi", "Bob", "Jana"];
+  const [editId, setEditId] = useState(null);
+  const [editValue, setEditValue] = useState("");
 
   const [username, setUsername] = useState(() => {
     return localStorage.getItem("username") || "";
@@ -95,7 +97,6 @@ const UnsereTiere = () => {
     if (duplicate) {
       setMessage("Diese Tierart wurde schon hinzugefügt 🐾");
     } else {
-
       const { data, error } = await supabase.from("unsere_tiere_db").insert(
         {
           name: trimmed,
@@ -104,9 +105,7 @@ const UnsereTiere = () => {
         { returning: "representation" } // Verhindert extra Payload
       );
 
-
       if (!error) {
-
         fetchStats();
         setMessage("");
       } else {
@@ -118,21 +117,29 @@ const UnsereTiere = () => {
 
     setInput("");
   };
+  const deleteAnimal = async (id, addedBy) => {
+    console.log("🧹 Versuch zu löschen:", id, "| user:", username);
 
-  const deleteAnimal = async (id) => {
+    if (addedBy !== username) {
+      console.warn("🚫 Du darfst nur deine eigenen Einträge löschen");
+      setMessage("🚫 Du darfst nur deine eigenen Einträge löschen 🛑");
+      return;
+    }
+
     const { error } = await supabase
       .from("unsere_tiere_db")
       .delete()
       .eq("id", id);
 
     if (error) {
-      console.error("Fehler beim Löschen:", error.message);
+      console.error("❌ Fehler beim Löschen:", error.message);
       setMessage("Fehler beim Löschen 🐾");
     } else {
+      console.log("✅ Löschen erfolgreich");
       setMessage("");
+      await fetchAnimals();
+      fetchStats();
     }
-
-    fetchStats();
   };
 
   const handleLogout = () => {
@@ -256,7 +263,11 @@ const UnsereTiere = () => {
                     <button onClick={() => alert("Editierfunktion kommt noch")}>
                       🖊
                     </button>
-                    <button onClick={() => deleteAnimal(animal.id)}>🗑</button>
+                    <button
+                      onClick={() => deleteAnimal(animal.id, animal.added_by)}
+                    >
+                      🗑
+                    </button>
                   </div>
                 )}
               </li>
