@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../../utils/supabase";
+import kathiImg from "../../assets/UnsereTiere/kathi.png";
+import bobImg from "../../assets/UnsereTiere/bob.png";
+import janaImg from "../../assets/UnsereTiere/jana.png";
 
 const UnsereTiere = () => {
   const [animals, setAnimals] = useState([]);
@@ -8,6 +11,11 @@ const UnsereTiere = () => {
   const [posterStats, setPosterStats] = useState([]);
 
   const predefinedUsers = ["Kathi", "Bob", "Jana"];
+  const userImages = {
+    Kathi: kathiImg,
+    Bob: bobImg,
+    Jana: janaImg,
+  };
   const [username, setUsername] = useState(
     () => localStorage.getItem("username") || ""
   );
@@ -132,17 +140,23 @@ const UnsereTiere = () => {
           <p>Wähle deinen Namen</p>
           <div className="unsere-tiere__name-options">
             {predefinedUsers.map((user) => (
-              <button
-                key={user}
-                className={`unsere-tiere__tag-option tag-${user.toLowerCase()}`}
-                onClick={() => {
-                  localStorage.setItem("username", user);
-                  setUsername(user);
-                  setShowNameInput(false);
-                }}
-              >
-                {user}
-              </button>
+              <div className="unsere-tiere__user-card" key={user}>
+                <button
+                  className={`unsere-tiere__tag-option tag-${user.toLowerCase()}`}
+                  onClick={() => {
+                    localStorage.setItem("username", user);
+                    setUsername(user);
+                    setShowNameInput(false);
+                  }}
+                >
+                  <img
+                    src={userImages[user]}
+                    alt="user"
+                    className="unsere-tiere__user-image"
+                  />
+                  {user}
+                </button>
+              </div>
             ))}
           </div>
         </div>

@@ -711,6 +711,7 @@ strong {
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease;
+  width: 200px;
 }
 .unsere-tiere__button:hover {
   background-color: var(--link-hover);
@@ -793,21 +794,16 @@ strong {
   text-align: center;
   margin: 2rem 0;
 }
+.unsere-tiere__name-dialog p {
+  margin-bottom: 3rem;
+}
 .unsere-tiere__name-options {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 5rem;
   justify-content: center;
   margin-top: 1rem;
-}
-.unsere-tiere__tag-option {
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  color: var(--background);
+  position: relative;
 }
 .unsere-tiere__user-info {
   display: flex;
@@ -835,6 +831,35 @@ strong {
   margin-top: 1rem;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+.unsere-tiere__user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unsere-tiere__user-card:nth-of-type(3) .unsere-tiere__user-image {
+  top: 10px;
+}
+.unsere-tiere__user-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.unsere-tiere__tag-option {
+  font-size: 1rem;
+  padding: 1.4rem 0.8rem 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--background);
+  text-align: center;
+  white-space: nowrap;
+  margin-top: -20px;
+  width: 180px;
 }
 .tag-kathi {
   background: var(--yellow);
