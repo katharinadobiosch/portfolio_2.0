@@ -252,12 +252,23 @@ const UnsereTiere = () => {
                     {a.added_by?.charAt(0).toUpperCase() || "?"}
                   </span>
                 )}
-                {a.added_by === username && (
+                {/* {a.added_by === username && (
                   <div className="unsere-tiere__actions">
                     <button onClick={() => deleteAnimal(a.id, a.added_by)}>
                       <img src={trashSVG} alt="trash" />
                     </button>
                   </div>
+                )} */}
+                {a.added_by === username ? (
+                  <button
+                    className="unsere-tiere__delete-btn"
+                    onClick={() => deleteAnimal(a.id, a.added_by)}
+                  >
+                    <img src={trashSVG} alt="trash" />
+                  </button>
+                ) : (
+                  // Dummy-Space damit die Initiale immer auf gleicher Höhe bleibt!
+                  <span className="unsere-tiere__delete-dummy"></span>
                 )}
               </li>
             ))}

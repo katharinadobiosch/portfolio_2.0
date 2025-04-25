@@ -229,15 +229,34 @@
 
     &__actions button {
         display: flex;
-        justify-content: center;
         align-items: center;
+        gap: 0.5rem;
         cursor: pointer;
+        gap: 0.5rem;
 
         img {
             width: 1.5rem;
             height: 1.5rem;
             margin-left: 1rem;
         }
+    }
+
+    &__delete-btn, &__delete-dummy {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        min-width: 70px;
+        justify-content: flex-end;
+    }
+
+    &__delete-dummy {
+        visibility: hidden;
     }
 }
 
