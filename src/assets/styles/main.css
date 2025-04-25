@@ -694,7 +694,6 @@ strong {
   border-radius: 8px;
   background: var(--neutral-00);
   color: var(--background);
-  font-size: 1rem;
 }
 @media (max-width: 480px) {
   .unsere-tiere__input {
@@ -708,7 +707,7 @@ strong {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
   transition: background-color 0.2s ease;
   width: 200px;
@@ -914,7 +913,7 @@ strong {
 }
 input,
 textarea {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* The entry file for compiling all Stylus files */
 /* Core imports */
