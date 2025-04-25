@@ -753,8 +753,8 @@ strong {
   align-items: center;
   justify-content: center;
   margin-left: 0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   font-size: 0.75rem;
   font-weight: bold;
@@ -775,7 +775,7 @@ strong {
   margin-bottom: 1rem;
 }
 .unsere-tiere__stats-label {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 0.3rem;
 }
 .unsere-tiere__stats-bar {
@@ -828,7 +828,7 @@ strong {
   padding: 1rem;
   border-radius: 8px;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 .unsere-tiere__user-card {
@@ -848,12 +848,10 @@ strong {
   cursor: pointer;
 }
 .unsere-tiere__user-image--jana {
-  object-position: top center;
-  scale: 0.9;
+  object-position: center -8px;
 }
 .unsere-tiere__user-image--kathi {
-  object-position: top center;
-  scale: 0.9;
+  object-position: center -13px;
 }
 .unsere-tiere__tag-option {
   font-size: 1rem;
@@ -868,22 +866,28 @@ strong {
   margin-top: -20px;
   width: 180px;
 }
+.unsere-tiere__actions button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.unsere-tiere__actions button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}
 .tag-kathi {
   background: var(--yellow);
+  font-size: 2rem;
 }
 .tag-jana {
   background: var(--pink);
+  font-size: 2rem;
 }
 .tag-bob {
   background: var(--link);
-}
-svg {
-  border: 1px solid #f00;
-  height: 50px;
-  width: 50px;
-}
-svg path {
-  fill: #ffc0cb;
+  font-size: 2rem;
 }
 /* The entry file for compiling all Stylus files */
 /* Core imports */

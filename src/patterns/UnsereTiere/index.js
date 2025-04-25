@@ -126,7 +126,7 @@ const UnsereTiere = () => {
         >
           Angemeldet als{"\u00A0"}
           <strong>{username}</strong>
-          {"\u00A0"}
+          {"\u00A0"}|{"\u00A0"}
           <button
             onClick={handleLogout}
             className="unsere-tiere__logout-button"
@@ -256,7 +256,7 @@ const UnsereTiere = () => {
                 {a.added_by === username && (
                   <div className="unsere-tiere__actions">
                     <button onClick={() => deleteAnimal(a.id, a.added_by)}>
-                      <img src={trashSVG} />
+                      <img src={trashSVG} alt="trash" />
                     </button>
                   </div>
                 )}
