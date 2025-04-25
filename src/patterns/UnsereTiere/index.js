@@ -163,8 +163,7 @@ const UnsereTiere = () => {
                         : ""
                     }`}
                   />
-
-                  {user}
+                  <span>{user}</span>
                 </button>
               </div>
             ))}

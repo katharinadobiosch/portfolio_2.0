@@ -731,7 +731,7 @@ strong {
 }
 .unsere-tiere__list {
   list-style: none;
-  padding: 0;
+  padding-bottom: 75px;
 }
 .unsere-tiere__list-item {
   display: flex;
@@ -879,15 +879,25 @@ strong {
 }
 .tag-kathi {
   background: var(--yellow);
+}
+.tag-kathi span {
   font-size: 2rem;
 }
 .tag-jana {
   background: var(--pink);
+}
+.tag-jana span {
   font-size: 2rem;
 }
 .tag-bob {
   background: var(--link);
+}
+.tag-bob span {
   font-size: 2rem;
+}
+input,
+textarea {
+  font-size: 16px;
 }
 /* The entry file for compiling all Stylus files */
 /* Core imports */
