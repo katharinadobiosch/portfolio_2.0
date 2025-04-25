@@ -865,24 +865,13 @@ strong {
   margin-top: -20px;
   width: 180px;
 }
-.unsere-tiere__actions button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-  gap: 0.5rem;
-}
-.unsere-tiere__actions button img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: 1rem;
-}
 .unsere-tiere__delete-btn,
 .unsere-tiere__delete-dummy {
   width: 1.5rem;
   height: 1.5rem;
   display: inline-block;
   margin-left: 1rem;
+  cursor: pointer;
 }
 .unsere-tiere__right {
   display: flex;
