@@ -3,6 +3,7 @@ import { supabase } from "../../utils/supabase";
 import kathiImg from "../../assets/UnsereTiere/kathi.png";
 import bobImg from "../../assets/UnsereTiere/bob.png";
 import janaImg from "../../assets/UnsereTiere/jana.png";
+import trashSVG from "../../assets/UnsereTiere/trash-solid.svg";
 
 const UnsereTiere = () => {
   const [animals, setAnimals] = useState([]);
@@ -152,8 +153,17 @@ const UnsereTiere = () => {
                   <img
                     src={userImages[user]}
                     alt="user"
-                    className="unsere-tiere__user-image"
+                    className={`unsere-tiere__user-image ${
+                      user === "Jana"
+                        ? "unsere-tiere__user-image--jana"
+                        : "" || user === "Kathi"
+                        ? "unsere-tiere__user-image--kathi"
+                        : "" || user === "Bob"
+                        ? "unsere-tiere__user-image--bob"
+                        : ""
+                    }`}
                   />
+
                   {user}
                 </button>
               </div>
@@ -246,7 +256,7 @@ const UnsereTiere = () => {
                 {a.added_by === username && (
                   <div className="unsere-tiere__actions">
                     <button onClick={() => deleteAnimal(a.id, a.added_by)}>
-                      🗑
+                      <img src={trashSVG} />
                     </button>
                   </div>
                 )}

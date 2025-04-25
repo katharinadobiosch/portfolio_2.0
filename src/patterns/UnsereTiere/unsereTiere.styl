@@ -66,7 +66,7 @@
     &__count {
         margin-bottom: 1.5rem;
         color: var(--yellow);
-        font-size: 0.95rem;
+        // font-size: 0.95rem;
     }
 
     &__list {
@@ -87,7 +87,7 @@
     }
 
     &__name {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         flex: 1;
     }
 
@@ -114,7 +114,7 @@
 
     &__stats h3 {
         margin-bottom: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     &__stats-item {
@@ -122,7 +122,7 @@
     }
 
     &__stats-label {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-bottom: 0.3rem;
     }
 
@@ -183,7 +183,7 @@
         padding: 1rem;
         border-radius: 8px;
         margin-top: 1rem;
-        font-size: 0.95rem;
+        font-size: 1.5rem;
         line-height: 1.5;
     }
 
@@ -205,6 +205,16 @@
         object-fit: cover;
         margin-bottom: 0.5rem;
         cursor: pointer;
+    }
+
+    &__user-image--jana {
+        object-position: top center;
+        scale: 0.9; // oder transform: scale(0.9);
+    }
+
+    &__user-image--kathi {
+        object-position: top center;
+        scale: 0.9; // oder transform: scale(0.9);
     }
 
     &__tag-option {
@@ -232,4 +242,14 @@
 
 .tag-bob {
     background: var(--link);
+}
+
+svg {
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+}
+
+svg path {
+    fill: pink;
 }
