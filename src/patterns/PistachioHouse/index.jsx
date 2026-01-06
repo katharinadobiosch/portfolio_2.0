@@ -425,8 +425,9 @@ export default function PistachioHouse() {
               Lust hat, ist herzlich willkommen! 🧘
             </li>
             <li>
-              <strong>19:30 Uhr:</strong> Unsere private Köchin zaubert uns ein traditionelles Menü: griechische Küche, Mezze, BBQ, frischer Fisch, Meeresfrüchte,
-              Fleisch... lasst euch überraschen! 🍽️✨
+              <strong>19:30 Uhr:</strong> Unsere private Köchin zaubert uns ein
+              traditionelles Menü: griechische Küche, Mezze, BBQ, frischer
+              Fisch, Meeresfrüchte, Fleisch... lasst euch überraschen! 🍽️✨
             </li>
           </ul>
 
@@ -452,24 +453,22 @@ export default function PistachioHouse() {
 
           <div className="divider" />
 
-          <h3>Spontane Idee: Abend auf Agistri?</h3>
+          <h3>Spontane Idee: Freitagabend</h3>
 
           <p>
-            Ich habe eine Idee für einen der Abende: Wir könnten mit einem
-            lokalen Wassertaxi rüber nach Agistri fahren und dort essen gehen.
-            Das ist aber nur eine Option. Wir entscheiden das gemeinsam und
-            spontan in der Gruppe. Kein Stress, kein Muss!
+            Ich habe eine Idee für den Abend: Wir könnten mit einem lokalen
+            Wassertaxi rüber nach Agistri fahren und dort essen.
           </p>
 
           <ul>
             <li>
               <strong>Plan A:</strong> Mit dem Jamaica Water Taxi rüber nach
               Agistri und Dinner im Alkyoni um 20:00 Uhr. Tolles Restaurant
-              direkt am Wasser
+              direkt am Wasser. Ich liebe es dort!
             </li>
             <li>
               <strong>Plan B:</strong> Entspanntes Dinner auf Ägina in einem
-              schönen Restaurant
+              schönen Restaurant oder bei uns im Haus.
             </li>
           </ul>
 
@@ -485,7 +484,7 @@ export default function PistachioHouse() {
           <p>
             Hier seht ihr, wer wann ankommt und abfliegt. Perfekt, um euch für
             die Anreise zusammenzuschließen oder um zu schauen, wer vielleicht
-            auch vor oder nach dem Wochenende auf Agistri ist!
+            auch vor dem Wochenende auf Agistri ist!
           </p>
 
           <div className="table-wrapper" role="region" aria-label="Flugtabelle">
@@ -526,12 +525,11 @@ export default function PistachioHouse() {
         </section>
 
         <section id="verlaengern">
-          <h2>Früher kommen oder länger bleiben?</h2>
+          <h2>Früher kommen und länger bleiben?</h2>
 
           <p>
             Einige von euch kommen früher, das ist wunderbar! Gerade Agistri ist
-            perfekt für ein paar Extra-Tage. Hier könnt ihr schauen, wer wann wo
-            ist und euch vielleicht schon vorab treffen oder gemeinsam anreisen.
+            perfekt für ein paar Extra-Tage. 
           </p>
 
           <ul>
