@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useState, useEffect } from "react";
 
-export default function Kathis40AeginaAgistri() {
+export default function PistachioHouse() {
   const [copiedKey, setCopiedKey] = useState(null);
 
   useEffect(() => {
@@ -173,6 +173,7 @@ export default function Kathis40AeginaAgistri() {
       <header>
         <div className="header-content">
           <div className="brand">Kathis 40. Geburtstag 🌿</div>
+
           <nav className="nav-links" aria-label="Inhaltsnavigation">
             <a href="#info" onClick={(e) => scrollToId(e, "info")}>
               Info
@@ -229,15 +230,16 @@ export default function Kathis40AeginaAgistri() {
             {copyButtons.map((b) => (
               <button
                 key={b.key}
-                className="btn"
+                className="btn btnAction"
                 type="button"
                 onClick={() => copyToClipboard(b.key, b.text)}
               >
                 {copiedKey === b.key ? "✓ Kopiert!" : b.label}
               </button>
             ))}
+
             <button
-              className="btn"
+              className="btn btnPrimary"
               type="button"
               onClick={() => window.print()}
             >

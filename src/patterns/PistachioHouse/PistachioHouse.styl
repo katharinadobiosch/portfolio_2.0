@@ -1,3 +1,6 @@
+/* COPY & PASTE: ersetzt/überschreibt nur Styles.
+React/Content bleibt 1:1. Ziel: individueller, editorial, gradlinig.
+Minimaler Code: .btnAction + .btnPrimary sowie Header-Grid. */
 :root {
     --sand: #f5ede0;
     --warm: #fff9f0;
@@ -9,7 +12,12 @@
     --text-light: #666666;
     --text-lighter: #999999;
     --border: #e5ddd0;
-    --white: #ffffff;
+    --white: #ffffff; /* clean radius system */
+    --r-0: 0px;
+    --r-1: 2px;
+    --r-2: 6px; /* subtle shadows (very light) */
+    --shadow-1: 0 1px 0 rgba(0, 0, 0, 0.04);
+    --shadow-2: 0 10px 28px rgba(0, 0, 0, 0.06);
 }
 
 /* =========================
@@ -23,390 +31,539 @@ PAGE
     color: var(--text);
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.75;
+    font-weight: 350;
+    letter-spacing: 0.1px;
+}
+
+.pistachio-house * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pistachio-house strong, .pistachio-house b {
+    font-weight: 650;
+}
+
+.pistachio-house a {
+    color: var(--coral);
+    text-decoration: none;
+    transition: opacity 0.2s, text-decoration-color 0.2s;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.pistachio-house a:hover {
+    opacity: 0.85;
+    text-decoration: underline;
+}
+
+/* =========================
+HEADER (more “index”, less “menu”)
+========================= */
+.pistachio-house header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 249, 240, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.pistachio-house .header-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.pistachio-house .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 650;
+    letter-spacing: 0.2px;
+}
+
+/* NAV: index-like */
+.pistachio-house .nav-links {
+    display: flex;
+    gap: 10px 14px;
+    flex-wrap: wrap;
+}
+
+.pistachio-house .nav-links a {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: rgba(42, 42, 42, 0.55);
+    font-weight: 650;
+    position: relative;
+}
+
+.pistachio-house .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    height: 1px;
+    background: transparent;
+    transition: background 0.15s;
+}
+
+.pistachio-house .nav-links a:hover {
+    color: rgba(42, 42, 42, 0.9);
+}
+
+.pistachio-house .nav-links a:hover::after {
+    background: rgba(217, 124, 90, 0.9);
+}
+
+/* =========================
+LAYOUT
+========================= */
+.pistachio-house main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 42px 20px 90px; /* signature: section numbering */
+    counter-reset: sec;
+}
+
+/* room for guide line on left */
+@media (min-width: 640px) {
+    .pistachio-house main {
+        padding: 64px 44px 110px;
+    }
+
+    .pistachio-house .header-content {
+        padding: 18px 40px;
+    }
+}
+
+.pistachio-house section {
+    margin-bottom: 92px;
+    counter-increment: sec;
+    position: relative;
+    padding-top: 8px;
+}
+
+/* subtle vertical guide line per section (not in header) */
+.pistachio-house section::before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(122, 137, 114, 0.18);
+}
+
+/* Do not number/guide the hero (feels more intentional) */
+.pistachio-house section.hero {
+    counter-increment: none;
+    padding-top: 0;
+    margin-bottom: 84px;
+}
+
+.pistachio-house section.hero::before {
+    display: none;
+}
+
+/* =========================
+TYPOGRAPHY (editorial rhythm)
+========================= */
+.pistachio-house h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 7.5vw, 56px);
+    font-weight: 650;
+    line-height: 1.06;
+    margin-bottom: 18px;
+    letter-spacing: -0.7px;
+}
+
+.pistachio-house .subtitle {
+    font-size: 18px;
+    line-height: 1.85;
+    color: var(--text-light);
+    margin-bottom: 28px;
+    font-weight: 350;
+    max-width: 70ch;
+}
+
+.pistachio-house h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 650;
+    margin-bottom: 18px;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-top: 18px;
+}
+
+/* section number (signature) */
+.pistachio-house section:not(.hero) h2::before {
+    content: '0' counter(sec);
+    display: inline-block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: var(--olive);
+    margin-right: 10px;
+    transform: translateY(-2px);
+}
+
+/* line under section title */
+.pistachio-house section:not(.hero) h2::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--border);
+    margin-top: 14px;
+}
+
+.pistachio-house h3 {
+    font-size: 12px;
+    font-weight: 750;
+    margin: 34px 0 12px;
     color: var(--text);
-    background: var(--warm);
-    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+.pistachio-house p {
+    margin-bottom: 16px;
+    color: var(--text-light);
+    font-weight: 350;
+    max-width: 66ch;
+}
+
+/* =========================
+META PILLS (fact rows)
+========================= */
+.pistachio-house .meta-pills {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.pistachio-house .pill {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 450;
+}
+
+.pistachio-house .pill:last-child {
+    border-bottom: 0;
+}
+
+.pistachio-house .pill strong {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: var(--olive);
+    font-weight: 750;
+    margin-right: 0;
+}
+
+/* =========================
+ACTIONS (two-level button system)
+- btnAction: looks like a link/action (kills “UI template” feel)
+- btnPrimary: one true button (Print)
+========================= */
+.pistachio-house .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    margin-bottom: 26px;
+    align-items: center;
+}
+
+/* base */
+.pistachio-house .btn {
+    font: inherit;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+}
+
+/* action buttons = text action */
+.pistachio-house .btn.btnAction {
+    padding: 0;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 650;
+    color: var(--text);
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    position: relative;
+}
+
+.pistachio-house .btn.btnAction::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    height: 1px;
+    background: rgba(217, 124, 90, 0.55);
+    transition: background 0.15s, transform 0.15s;
+    transform-origin: left;
+}
+
+.pistachio-house .btn.btnAction:hover::after {
+    background: rgba(217, 124, 90, 1);
+    transform: scaleX(1.02);
+}
+
+/* primary button = only one, still clean and not rounded/puffy */
+.pistachio-house .btn.btnPrimary {
+    padding: 10px 14px;
+    border: 1px solid rgba(42, 42, 42, 0.22);
+    border-radius: var(--r-1);
+    font-size: 13px;
+    font-weight: 650;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.55);
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.pistachio-house .btn.btnPrimary:hover {
+    border-color: rgba(217, 124, 90, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================
+QUICK BOX (panel, not card)
+========================= */
+.pistachio-house .quick-box {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding: 18px 0;
+    margin-bottom: 30px;
+}
+
+.pistachio-house .quick-box h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.pistachio-house .quick-items {
+    display: grid;
+    gap: 12px;
+}
+
+.pistachio-house .quick-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.pistachio-house .quick-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.pistachio-house .quick-item span:first-child {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.pistachio-house .quick-item span:last-child {
+    color: var(--text);
+    font-weight: 650;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* =========================
+NOTES & CALLOUTS (typographic, less boxy)
+========================= */
+.pistachio-house .note {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--peach);
+    padding: 10px 0 10px 14px;
+    margin: 26px 0;
+    border-radius: 0;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.pistachio-house .callout {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--olive);
+    border-radius: 0;
+    padding: 10px 0 10px 14px;
+    margin: 26px 0;
+}
+
+.pistachio-house .wa-title {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 650;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.pistachio-house .wa-text {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* =========================
+LISTS (clean, consistent)
+========================= */
+.pistachio-house ul {
+    list-style: none;
+    margin: 18px 0;
+}
+
+.pistachio-house li {
+    margin-bottom: 14px;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 22px;
+    font-weight: 350;
+}
+
+.pistachio-house li::before {
+    content: '·';
+    position: absolute;
+    left: 8px;
+    color: var(--coral);
+    font-weight: 750;
+    font-size: 20px;
+}
+
+/* =========================
+DIVIDER
+========================= */
+.pistachio-house .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 34px 0;
+}
+
+/* =========================
+TABLES (flat, editorial header)
+========================= */
+.pistachio-house .table-wrapper {
+    overflow-x: auto;
+    margin: 26px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.pistachio-house table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.pistachio-house th {
+    text-align: left;
+    padding: 14px 12px;
+    background: transparent;
+    font-weight: 750;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.pistachio-house td {
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-light);
+    font-weight: 350;
+}
+
+.pistachio-house tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================
+FOOTER
+========================= */
+.pistachio-house footer {
+    margin-top: 80px;
+    padding-top: 34px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-lighter);
+    font-size: 13px;
+}
+
+/* =========================
+RESPONSIVE / PRINT
+========================= */
+@media (min-width: 768px) {
+    html {
+        scroll-padding-top: 86px;
     }
 
-    strong, b {
-        font-weight: 600;
-    }
-
-    a {
-        color: var(--coral);
-        text-decoration: none;
-        transition: opacity 0.2s;
-    }
-
-    a:hover {
-        opacity: 0.7;
-    }
-
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(255, 249, 240, 0.95);
-        backdrop-filter: blur(8px);
-        border-bottom: 1px solid var(--border);
-    }
-
-    .header-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 16px 20px;
-    }
-
-    .brand {
-        font-family: 'Playfair Display', serif;
+    .pistachio-house .subtitle {
         font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
     }
 
-    .nav-links {
-        display: flex;
-        gap: 8px;
-        margin-top: 12px;
-        flex-wrap: wrap;
+    /* header: brand left, nav right (desktop) */
+    .pistachio-house .header-content {
+        grid-template-columns: 1fr auto;
+        align-items: end;
     }
 
-    .nav-links a {
-        padding: 6px 14px;
-        font-size: 14px;
-        color: var(--text-light);
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        background: var(--white);
-        font-weight: 400;
+    .pistachio-house .nav-links {
+        justify-content: flex-end;
+    }
+}
+
+@media print {
+    .pistachio-house header {
+        position: static;
     }
 
-    .nav-links a:hover {
-        opacity: 1;
-        border-color: var(--coral);
-        color: var(--coral);
+    .pistachio-house .button-group, .pistachio-house .nav-links {
+        display: none;
     }
 
-    main {
-        max-width: 680px;
-        margin: 0 auto;
-        padding: 40px 20px 80px;
+    :global(body) {
+        background: white !important;
     }
 
-    .hero {
-        margin-bottom: 80px;
+    :global(#root) {
+        background: white !important;
     }
 
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: clamp(36px, 8vw, 56px);
-        font-weight: 600;
-        line-height: 1.1;
-        margin-bottom: 24px;
-        letter-spacing: -0.5px;
-    }
-
-    .subtitle {
-        font-size: 18px;
-        line-height: 1.8;
-        color: var(--text-light);
-        margin-bottom: 32px;
-        font-weight: 300;
-    }
-
-    .meta-pills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 32px;
-    }
-
-    .pill {
-        padding: 8px 16px;
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        font-size: 14px;
-        color: var(--text-light);
-        font-weight: 400;
-    }
-
-    .pill strong {
-        color: var(--text);
-        margin-right: 4px;
-    }
-
-    .button-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 24px;
-    }
-
-    .btn {
-        padding: 12px 20px;
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.2s;
-        color: var(--text);
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .btn:hover {
-        border-color: var(--coral);
-        background: var(--sand);
-    }
-
-    .btn:active {
-        transform: scale(0.98);
-    }
-
-    .quick-box {
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 24px;
-        margin-bottom: 32px;
-    }
-
-    .quick-box h3 {
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: var(--olive);
-        margin-bottom: 16px;
-    }
-
-    .quick-items {
-        display: grid;
-        gap: 12px;
-    }
-
-    .quick-item {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        padding-bottom: 12px;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .quick-item:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
-    .quick-item span:first-child {
-        color: var(--text-light);
-        font-size: 14px;
-    }
-
-    .quick-item span:last-child {
-        color: var(--text);
-        font-weight: 500;
-        text-align: right;
-        font-size: 14px;
-    }
-
-    .note {
-        background: var(--sand);
-        border-left: 3px solid var(--peach);
-        padding: 16px 20px;
-        margin: 32px 0;
-        border-radius: 4px;
-        font-size: 15px;
-        color: var(--text);
-    }
-
-    section {
-        margin-bottom: 80px;
-    }
-
-    h2 {
-        font-family: 'Playfair Display', serif;
-        font-size: 32px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        letter-spacing: -0.3px;
-    }
-
-    h3 {
-        font-size: 16px;
-        font-weight: 600;
-        margin: 32px 0 16px;
-        color: var(--olive);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-    p {
-        margin-bottom: 20px;
-        color: var(--text-light);
-        font-weight: 300;
-    }
-
-    ul {
-        list-style: none;
-        margin: 20px 0;
-    }
-
-    li {
-        margin-bottom: 16px;
-        color: var(--text-light);
-        position: relative;
-        padding-left: 24px;
-        font-weight: 300;
-    }
-
-    li::before {
-        content: '·';
-        position: absolute;
-        left: 8px;
-        color: var(--coral);
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    li b {
-        color: var(--text);
-    }
-
-    .divider {
-        height: 1px;
-        background: var(--border);
-        margin: 40px 0;
-    }
-
-    .callout {
-        background: var(--white);
-        border: 1px solid var(--peach);
-        border-radius: 8px;
-        padding: 20px 24px;
-        margin: 32px 0;
-    }
-
-    .wa-title {
-        font-size: 20px;
-        font-family: 'Playfair Display', serif;
-        font-weight: 600;
-        margin-bottom: 12px;
-        color: var(--text);
-    }
-
-    .wa-text {
-        margin: 0;
-        font-size: 15px;
-    }
-
-    .table-wrapper {
-        overflow-x: auto;
-        margin: 32px 0;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: var(--white);
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 14px;
-    }
-
-    th {
-        text-align: left;
-        padding: 16px;
-        background: var(--sand);
-        font-weight: 600;
-        border-bottom: 1px solid var(--border);
-        color: var(--text);
-        white-space: nowrap;
-        font-size: 13px;
-    }
-
-    td {
-        padding: 16px;
-        border-bottom: 1px solid var(--border);
-        color: var(--text-light);
-        font-weight: 300;
-    }
-
-    tr:last-child td {
-        border-bottom: none;
-    }
-
-    td b {
-        color: var(--text);
-    }
-
-    footer {
-        margin-top: 80px;
-        padding-top: 40px;
-        border-top: 1px solid var(--border);
-        text-align: center;
-        color: var(--text-lighter);
-        font-size: 14px;
-    }
-
-    @media (min-width: 640px) {
-        main {
-            padding: 60px 40px 100px;
-        }
-
-        .header-content {
-            padding: 20px 40px;
-        }
-
-        .nav-links {
-            margin-top: 16px;
-        }
-
-        section {
-            margin-bottom: 100px;
-        }
-    }
-
-    @media (min-width: 768px) {
-        html {
-            scroll-padding-top: 80px;
-        }
-
-        .hero {
-            margin-bottom: 100px;
-        }
-
-        .subtitle {
-            font-size: 20px;
-        }
-    }
-
-    @media print {
-        header {
-            position: static;
-        }
-
-        .button-group, .nav-links {
-            display: none;
-        }
-
-        /* global print background */
-        :global(body) {
-            background: white !important;
-        }
-
-        :global(#root) {
-            background: white !important;
-        }
+    .pistachio-house section::before {
+        display: none;
     }
 }
