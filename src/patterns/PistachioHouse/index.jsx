@@ -27,22 +27,22 @@ export default function PistachioHouse() {
     []
   );
 
-  const copyButtons = useMemo(
+  const actionLinks = useMemo(
     () => [
       {
         key: "wa",
         label: "📋 WhatsApp-Gruppe",
-        text: "Kathis 40 | Aegean Pistachio House 💚",
+        href: "https://chat.whatsapp.com/", // ggf. später durch echten Invite-Link ersetzen
       },
       {
         key: "house",
         label: "🏠 Haus",
-        text: "https://airbnb.de/rooms/944138955364529212",
+        href: "https://airbnb.de/rooms/944138955364529212",
       },
       {
         key: "ferry",
         label: "⛴️ Ferryhopper",
-        text: "https://www.ferryhopper.com/",
+        href: "https://www.ferryhopper.com/",
       },
     ],
     []
@@ -227,15 +227,16 @@ export default function PistachioHouse() {
           </div>
 
           <div className="button-group" aria-label="Schnellaktionen">
-            {copyButtons.map((b) => (
-              <button
-                key={b.key}
+            {actionLinks.map((a) => (
+              <a
+                key={a.key}
+                href={a.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btnAction"
-                type="button"
-                onClick={() => copyToClipboard(b.key, b.text)}
               >
-                {copiedKey === b.key ? "✓ Kopiert!" : b.label}
-              </button>
+                {a.label}
+              </a>
             ))}
 
             <button
