@@ -20,7 +20,7 @@ export default function PistachioHouse() {
 
   const quickItems = useMemo(
     () => [
-      { label: "Anreise", value: "ATH → Piräus → Aegina" },
+      { label: "Anreise", value: "ATH → Piräus → Ägina" },
       { label: "Fähren", value: "via Ferryhopper buchen" },
       { label: "Optional", value: "Yoga/Pilates 10:00" },
     ],
@@ -76,7 +76,7 @@ export default function PistachioHouse() {
       },
       {
         date: "Do 15.10.",
-        who: "(Anne)",
+        who: "Anne",
         route: "DUS → ATH (via MUC)",
         dep: "06:20",
         arr: "11:50",
@@ -208,11 +208,11 @@ export default function PistachioHouse() {
 
       <main>
         <section className="hero">
-          <h1>Mein 40. Geburtstag auf Aegina 🎉</h1>
+          <h1>Mein 40. Geburtstag auf Ägina 🎉</h1>
 
           <p className="subtitle">
             Hallo ihr Lieben! Ich freue mich so sehr, dass ihr dabei seid. Hier
-            findet ihr alle Infos für unsere gemeinsame Zeit auf Aegina. Das
+            findet ihr alle Infos für unsere gemeinsame Zeit auf Ägina. Das
             Highlight wird unser Samstagabend mit privatem Chef sein, aber auch
             die anderen Tage werden entspannt und schön. Lasst uns zusammen
             Sonne, Meer und gutes Essen genießen!
@@ -325,7 +325,7 @@ export default function PistachioHouse() {
         </section>
 
         <section id="anreise">
-          <h2>Anreise nach Aegina</h2>
+          <h2>Anreise nach Ägina</h2>
 
           <h3>Flughafen Athen → Piräus</h3>
 
@@ -354,10 +354,10 @@ export default function PistachioHouse() {
 
           <div className="divider" />
 
-          <h3>Piräus → Aegina</h3>
+          <h3>Piräus → Ägina</h3>
 
           <p>
-            Und dann geht&apos;s aufs Wasser! Die Fährfahrt nach Aegina ist
+            Und dann geht&apos;s aufs Wasser! Die Fährfahrt nach Ägina ist
             wunderschön, genießt den Ausblick aufs Meer und lasst den Urlaub
             beginnen. Alle Details zu Abfahrtszeiten und Preisen findet ihr auf{" "}
             <a
@@ -379,7 +379,7 @@ export default function PistachioHouse() {
             </li>
             <li>
               <strong>Frühe Ankömmlinge:</strong> Check-in im Haus ist erst ab
-              15:00, aber Aegina hat viele schöne Cafés und Strände zum
+              15:00, aber Ägina hat viele schöne Cafés und Strände zum
               Überbrücken.
             </li>
             <li>
@@ -459,7 +459,7 @@ export default function PistachioHouse() {
               direkt am Wasser
             </li>
             <li>
-              <strong>Plan B:</strong> Entspanntes Dinner auf Aegina in einem
+              <strong>Plan B:</strong> Entspanntes Dinner auf Ägina in einem
               schönen Restaurant
             </li>
           </ul>
@@ -527,13 +527,12 @@ export default function PistachioHouse() {
 
           <ul>
             <li>
-              <strong>Ich lebe auf Agistri</strong> in Megalochori. Falls ihr
+              <strong>Ich wohne auf Agistri</strong> in Megalochori. Falls ihr
               früher kommen möchtet, freue ich mich sehr!{" "}
             </li>
             <li>
-              <strong>Plant eure Extra-Tage?</strong> Schreibt in die
-              WhatsApp-Gruppe, wo ihr wann seid. Vielleicht ergibt sich ja ein
-              spontaner Kaffee oder gemeinsamer Strandtag!
+              <strong>Plant eure Extra-Tage?</strong> Schreibt gerne in die
+              WhatsApp-Gruppe, wo ihr wann seid.
             </li>
             <li>
               <strong>Gemeinsam anreisen?</strong> Teilt eure Flug- und
@@ -544,10 +543,10 @@ export default function PistachioHouse() {
         </section>
 
         <section id="haus">
-          <h2>Unser Haus auf Aegina</h2>
+          <h2>Unser Haus auf Ägina</h2>
 
           <p>
-            Wir haben ein wunderschönes Haus gemietet, mit Garten, Terrasse und
+            Ich habe ein wunderschönes Haus gemietet, mit Garten, Terrasse und
             genug Platz für uns alle. Hier ist der Link, falls ihr euch das Haus
             mal anschauen möchtet:
           </p>
@@ -581,9 +580,49 @@ export default function PistachioHouse() {
           <h2>Zimmer im Haus</h2>
 
           <p>
-            Das Haus hat 6 Schlafzimmer plus einen Guest Room. Wir klären vor
-            Ort, wer wo schläft.
+            Das Haus hat 6 Schlafzimmer plus einen Guest Room. Schließt euch
+            gerne schon zusammen, wer mit wem schläft und gebt mir Bescheid.
           </p>
+
+          <div className="callout">
+            <h3>Wer ist dabei</h3>
+
+            <p>
+              Zur Orientierung, wer insgesamt dabei ist. Viele von euch kennen
+              sich bereits, andere lernen sich vor Ort kennen.
+            </p>
+
+            <ul>
+              <li>Kathi</li>
+              <li>Sandi</li>
+              <li>Jolanta</li>
+              <li>Heinrich</li>
+              <li>Tülin</li>
+              <li>Martin</li>
+              <li>Lydia</li>
+              <li>Moni 🌱</li>
+              <li>Simona 🌱</li>
+              <li>Anne</li>
+              <li>Laura</li>
+              <li>Fabi 🌱</li>
+              <li>Bob</li>
+              <li>Jana</li>
+              <li>Conni 🌱</li>
+              <li>Chris</li>
+              <li>Linda (?) 🌱</li>
+              <li>Jochen (?)</li>
+            </ul>
+
+            <p
+              style={{
+                marginTop: 12,
+                fontSize: 14,
+                color: "var(--text-light)",
+              }}
+            >
+              🌱 = vegetarisch · (?) = noch nicht sicher
+            </p>
+          </div>
 
           <div
             className="table-wrapper"
@@ -622,7 +661,7 @@ export default function PistachioHouse() {
 
         <footer>
           <p>Mit Liebe erstellt im Januar 2025 🌿</p>
-          <p style={{ marginTop: 8 }}>Aegina, wir kommen!</p>
+          <p style={{ marginTop: 8 }}>Ägina, wir kommen!</p>
         </footer>
       </main>
     </div>

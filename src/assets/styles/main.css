@@ -933,6 +933,8 @@ textarea {
   line-height: 1.75;
   font-weight: 350;
   letter-spacing: 0.1px;
+  z-index: 9999;
+  scroll-padding-top: 86px; /* ungefähr Headerhöhe */
 }
 .pistachio-house * {
   box-sizing: border-box;
@@ -957,7 +959,7 @@ textarea {
 .pistachio-house header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background: rgba(255,249,240,0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
