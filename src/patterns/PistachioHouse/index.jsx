@@ -413,7 +413,7 @@ export default function PistachioHouse() {
               <strong>Ab 15:00:</strong> Check-in im Haus
             </li>
             <li>
-              Ankommen, durchatmen, die Insel erkunden. Kein festes Programm,
+              Ankommen, durchatmen, das Haus erkunden. Kein festes Programm,
               einfach genießen!
             </li>
           </ul>
