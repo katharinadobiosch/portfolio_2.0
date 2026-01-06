@@ -1,7 +1,12 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState, useEffect } from "react";
 
 export default function Kathis40AeginaAgistri() {
   const [copiedKey, setCopiedKey] = useState(null);
+
+  useEffect(() => {
+    document.body.classList.add("theme-pistachio");
+    return () => document.body.classList.remove("theme-pistachio");
+  }, []);
 
   const metaPills = useMemo(
     () => [

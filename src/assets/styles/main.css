@@ -35,13 +35,15 @@
   font-display: fallback;
   font-family: SourceCodePro;
   font-weight: 400;
-  src: url("../../../public/assets/fonts/SourceCodePro-Regular.ttf") format('truetype');
+  src: url("../../../public/assets/fonts/SourceCodePro-Regular.ttf")
+    format("truetype");
 }
 @font-face {
   font-display: fallback;
   font-family: SourceCodePro;
   font-weight: 500;
-  src: url("../../../public/assets/fonts/SourceCodePro-Black.ttf") format('truetype');
+  src: url("../../../public/assets/fonts/SourceCodePro-Black.ttf")
+    format("truetype");
 }
 html {
   font-size: 62.5%;
@@ -217,7 +219,7 @@ blockquotebefore,
 blockquoteafter,
 qbefore,
 qafter {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -252,11 +254,15 @@ button {
   --font-weight-black: 900;
 }
 :root {
-  --elevation-s: 0 0 2px 0 rgba(0,0,0,0.05), 0 1px 3px 0 rgba(0,0,0,0.15);
-  --elevation-m: 0 2px 5px -1px rgba(0,0,0,0.15), 0 1px 3px 0 rgba(0,0,0,0.08);
-  --elevation-l: 0 3px 8px -1px rgba(0,0,0,0.15), 0 1px 3px 0 rgba(0,0,0,0.05);
-  --elevation-xl: 0 8px 20px -3px rgba(0,0,0,0.12), 0 2px 5px 0 rgba(0,0,0,0.07);
-  --elevation-xxl: 0 12px 40px -8px rgba(0,0,0,0.12), 0 5px 10px 0 rgba(0,0,0,0.07);
+  --elevation-s: 0 0 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  --elevation-m: 0 2px 5px -1px rgba(0, 0, 0, 0.15),
+    0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  --elevation-l: 0 3px 8px -1px rgba(0, 0, 0, 0.15),
+    0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --elevation-xl: 0 8px 20px -3px rgba(0, 0, 0, 0.12),
+    0 2px 5px 0 rgba(0, 0, 0, 0.07);
+  --elevation-xxl: 0 12px 40px -8px rgba(0, 0, 0, 0.12),
+    0 5px 10px 0 rgba(0, 0, 0, 0.07);
 }
 :root {
   --z-index-lowest: 1;
@@ -527,7 +533,12 @@ strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); /* Hintergrund mit Transparenz für den Modal-Overlay */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Hintergrund mit Transparenz für den Modal-Overlay */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,7 +556,7 @@ strong {
   background-color: #fff;
   padding: 1.6rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Schatten für das Modal */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Schatten für das Modal */
   width: 100%;
   max-height: 80%;
   overflow: auto;
@@ -616,7 +627,8 @@ strong {
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 .hamburger-menu span:first-child {
   transform-origin: 0% 0%;
@@ -917,24 +929,24 @@ textarea {
   --border: #e5ddd0;
   --white: #fff;
 }
+:global(body.theme-pistachio) {
+  background: var(--warm) !important;
+  color: var(--text);
+}
+:global(body.theme-pistachio #root) {
+  background: var(--warm) !important;
+}
+.pistachio-house {
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  background: var(--warm);
+  color: var(--text);
+}
 .pistachio-house * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-.pistachio-house html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.pistachio-house main {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--text);
-  background: var(--warm);
-  font-weight: 300;
 }
 .pistachio-house strong,
 .pistachio-house b {
@@ -952,7 +964,7 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255,249,240,0.95);
+  background: rgba(255, 249, 240, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -962,7 +974,7 @@ textarea {
   padding: 16px 20px;
 }
 .pistachio-house .brand {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -996,7 +1008,7 @@ textarea {
   margin-bottom: 80px;
 }
 .pistachio-house h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(36px, 8vw, 56px);
   font-weight: 600;
   line-height: 1.1;
@@ -1109,7 +1121,7 @@ textarea {
   margin-bottom: 80px;
 }
 .pistachio-house h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -1140,7 +1152,7 @@ textarea {
   font-weight: 300;
 }
 .pistachio-house li::before {
-  content: '·';
+  content: "·";
   position: absolute;
   left: 8px;
   color: var(--coral);
@@ -1164,7 +1176,7 @@ textarea {
 }
 .pistachio-house .wa-title {
   font-size: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   margin-bottom: 12px;
   color: var(--text);
@@ -1248,8 +1260,11 @@ textarea {
   .pistachio-house .nav-links {
     display: none;
   }
-  .pistachio-house body {
-    background: #fff;
+  .pistachio-house :global(body) {
+    background: #fff !important;
+  }
+  .pistachio-house :global(#root) {
+    background: #fff !important;
   }
 }
 /* The entry file for compiling all Stylus files */

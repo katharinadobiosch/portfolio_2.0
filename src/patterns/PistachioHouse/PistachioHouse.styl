@@ -1,4 +1,6 @@
-
+/* =========================
+GLOBAL VARS (CSS Modules safe)
+========================= */
 :root {
     --sand: #f5ede0;
     --warm: #fff9f0;
@@ -13,27 +15,33 @@
     --white: #ffffff;
 }
 
+/* =========================
+GLOBAL THEME OVERRIDES
+(nur diese zwei Regeln)
+========================= */
+:global(body.theme-pistachio) {
+    background: var(--warm) !important;
+    color: var(--text);
+}
+
+:global(body.theme-pistachio #root) {
+    background: var(--warm) !important;
+}
+
+/* =========================
+PAGE
+========================= */
 .pistachio-house {
+    position: fixed;
+    inset: 0;
+    overflow: auto;
+    background: var(--warm);
+    color: var(--text);
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-    }
-
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 70px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    main {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-size: 16px;
-        line-height: 1.7;
-        color: var(--text);
-        background: var(--warm);
-        font-weight: 300;
     }
 
     strong, b {
@@ -402,8 +410,13 @@
             display: none;
         }
 
-        body {
-            background: white;
+        /* global print background */
+        :global(body) {
+            background: white !important;
+        }
+
+        :global(#root) {
+            background: white !important;
         }
     }
 }
