@@ -1,6 +1,3 @@
-/* =========================
-GLOBAL VARS (CSS Modules safe)
-========================= */
 :root {
     --sand: #f5ede0;
     --warm: #fff9f0;
@@ -16,19 +13,6 @@ GLOBAL VARS (CSS Modules safe)
 }
 
 /* =========================
-GLOBAL THEME OVERRIDES
-(nur diese zwei Regeln)
-========================= */
-:global(body.theme-pistachio) {
-    background: var(--warm) !important;
-    color: var(--text);
-}
-
-:global(body.theme-pistachio #root) {
-    background: var(--warm) !important;
-}
-
-/* =========================
 PAGE
 ========================= */
 .pistachio-house {
@@ -37,6 +21,12 @@ PAGE
     overflow: auto;
     background: var(--warm);
     color: var(--text);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--warm);
+    font-weight: 300;
 
     * {
         box-sizing: border-box;

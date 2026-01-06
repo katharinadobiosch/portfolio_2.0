@@ -20,7 +20,6 @@ export default function Kathis40AeginaAgistri() {
 
   const quickItems = useMemo(
     () => [
-      { label: "WhatsApp", value: "Kathis 40 | Aegean Pistachio House 💚" },
       { label: "Anreise", value: "ATH → Piräus → Aegina" },
       { label: "Fähren", value: "via Ferryhopper buchen" },
       { label: "Optional", value: "Yoga/Pilates 10:00" },
@@ -32,17 +31,17 @@ export default function Kathis40AeginaAgistri() {
     () => [
       {
         key: "wa",
-        label: "📋 WhatsApp-Name kopieren",
+        label: "📋 WhatsApp-Gruppe",
         text: "Kathis 40 | Aegean Pistachio House 💚",
       },
       {
         key: "house",
-        label: "🏠 Haus-Link kopieren",
+        label: "🏠 Haus",
         text: "https://airbnb.de/rooms/944138955364529212",
       },
       {
         key: "ferry",
-        label: "⛴️ Ferryhopper kopieren",
+        label: "⛴️ Ferryhopper",
         text: "https://www.ferryhopper.com/",
       },
     ],
@@ -85,7 +84,7 @@ export default function Kathis40AeginaAgistri() {
       },
       {
         date: "Fr 16.10.",
-        who: "Heinrich & Jolante",
+        who: "Heinrich & Jolanta",
         route: "KTW → ATH",
         dep: "08:00",
         arr: "11:25",
@@ -101,7 +100,7 @@ export default function Kathis40AeginaAgistri() {
       },
       {
         date: "Mo 19.10.",
-        who: "(Anne)",
+        who: "Anne",
         route: "ATH → DUS (via MUC)",
         dep: "15:45",
         arr: "19:40",
@@ -213,7 +212,7 @@ export default function Kathis40AeginaAgistri() {
           <p className="subtitle">
             Hallo ihr Lieben! Ich freue mich so sehr, dass ihr dabei seid. Hier
             findet ihr alle Infos für unsere gemeinsame Zeit auf Aegina. Das
-            Highlight wird unser Samstagabend mit privatem Chef sein – aber auch
+            Highlight wird unser Samstagabend mit privatem Chef sein, aber auch
             die anderen Tage werden entspannt und schön. Lasst uns zusammen
             Sonne, Meer und gutes Essen genießen!
           </p>
@@ -259,9 +258,8 @@ export default function Kathis40AeginaAgistri() {
           </div>
 
           <div className="note">
-            <strong>Übrigens:</strong> Ich lebe auf Agistri in Megalochori –
-            falls ihr auch früher kommen möchtet, können wir uns dort gerne
-            schon treffen!
+            <strong>Übrigens:</strong> Ich wohne auf Agistri in Megalochori.
+            Falls ihr früher kommen möchtet, freue ich mich sehr!
           </div>
         </section>
 
@@ -270,24 +268,24 @@ export default function Kathis40AeginaAgistri() {
 
           <p>
             Hier findet ihr alle wichtigen Infos für unsere gemeinsame Zeit auf
-            einen Blick. Ich möchte, dass ihr euch entspannt zurücklehnen könnt
-            und einfach nur die Vorfreude genießt!
+            einen Blick. Ich möchte, dass wir eine wunderbare Zeit zusammen
+            verbringen und jetzt schonmal die Vorfreude genießen können!
           </p>
 
           <ul>
             <li>
-              <strong>Samstag</strong> ist unser großer Abend mit privatem Chef
-              – Start um 19:30. Freut euch auf griechische Küche, BBQ und viele
+              <strong>Samstag</strong> ist unser großer Abend mit privatem Chef.
+              Start um 19:30. Freut euch auf griechische Küche, BBQ und viele
               Leckereien!
             </li>
             <li>
               <strong>Freitag und Sonntag</strong> halten wir entspannt.
-              Vielleicht ein Ausflug nach Agistri oder ein gemütliches Dinner –
-              wir entscheiden spontan.
+              Vielleicht ein Ausflug oder ein gemütliches Dinner, wir
+              entscheiden spontan.
             </li>
             <li>
-              <strong>Verlängern?</strong> Wer früher kommt oder länger bleiben
-              möchte, findet unten alle Infos.
+              <strong>Verlängern?</strong> Wer früher kommt, findet unten alle
+              Infos.
             </li>
           </ul>
 
@@ -299,8 +297,8 @@ export default function Kathis40AeginaAgistri() {
 
           <div className="note">
             <strong>Dresscode:</strong> Kommt einfach so, wie ihr euch
-            wohlfühlt! Wir sind auf einer griechischen Insel – alles kann,
-            nichts muss 🌸
+            wohlfühlt! Wir sind auf einer griechischen Insel, alles kann, nichts
+            muss 🌸
           </div>
         </section>
 
@@ -318,7 +316,7 @@ export default function Kathis40AeginaAgistri() {
             <p className="wa-text">
               Hier schreiben wir uns: Wann kommt ihr an? Wer fährt zusammen mit
               der Fähre? Gibt's spontane Pläne? In der Gruppe bleiben wir
-              flexibel und können uns easy zusammenschließen – ob schon ab Athen
+              flexibel und können uns easy zusammenschließen, ob schon ab Athen
               oder dann auf der Insel!
             </p>
           </div>
@@ -332,7 +330,7 @@ export default function Kathis40AeginaAgistri() {
           <p>
             Von Athen nach Piräus kommt ihr super easy! Hier sind drei
             Möglichkeiten, die gut funktionieren. Die Zeiten und Preise sind
-            Richtwerte – plant am besten ein bisschen Puffer ein, je nachdem wie
+            Richtwerte. Plant am besten ein bisschen Puffer ein, je nachdem wie
             der Verkehr ist.
           </p>
 
@@ -343,7 +341,7 @@ export default function Kathis40AeginaAgistri() {
             </li>
             <li>
               <strong>🚌 Bus X96</strong> · ca. 60–90 Min · ca. 5,50 € · Fährt
-              oft auch nachts – praktisch bei späten Ankünften!
+              oft auch nachts, praktisch bei späten Ankünften!
             </li>
             <li>
               <strong>🚕 Taxi</strong> · ca. 40–60 Min · ca. 57 € tagsüber / 72
@@ -358,7 +356,7 @@ export default function Kathis40AeginaAgistri() {
 
           <p>
             Und dann geht&apos;s aufs Wasser! Die Fährfahrt nach Aegina ist
-            wunderschön – genießt den Ausblick aufs Meer und lasst den Urlaub
+            wunderschön, genießt den Ausblick aufs Meer und lasst den Urlaub
             beginnen. Alle Details zu Abfahrtszeiten und Preisen findet ihr auf{" "}
             <a
               href="https://www.ferryhopper.com/"
@@ -379,7 +377,7 @@ export default function Kathis40AeginaAgistri() {
             </li>
             <li>
               <strong>Frühe Ankömmlinge:</strong> Check-in im Haus ist erst ab
-              15:00 – aber Aegina hat viele schöne Cafés und Strände zum
+              15:00, aber Aegina hat viele schöne Cafés und Strände zum
               Überbrücken.
             </li>
             <li>
@@ -393,7 +391,7 @@ export default function Kathis40AeginaAgistri() {
           <h2>Unser Programm</h2>
 
           <p>
-            Der Samstag ist unser Highlight – den Rest der Zeit lassen wir
+            Der Samstag ist unser Highlight! Den Rest der Zeit lassen wir
             bewusst locker und entspannt. Inselmodus eben! 🌴
           </p>
 
@@ -403,7 +401,7 @@ export default function Kathis40AeginaAgistri() {
               <strong>Ab 15:00:</strong> Check-in im Haus
             </li>
             <li>
-              Ankommen, durchatmen, die Insel erkunden – kein festes Programm,
+              Ankommen, durchatmen, die Insel erkunden. Kein festes Programm,
               einfach genießen!
             </li>
           </ul>
@@ -411,7 +409,7 @@ export default function Kathis40AeginaAgistri() {
           <h3>Samstag, 17.10. (unser großer Abend!)</h3>
           <ul>
             <li>
-              <strong>10:00 Uhr:</strong> Yoga im Garten – wer Lust hat, ist
+              <strong>10:00 Uhr:</strong> Yoga im Garten. Wer Lust hat, ist
               herzlich willkommen! 🧘
             </li>
             <li>
@@ -424,11 +422,11 @@ export default function Kathis40AeginaAgistri() {
           <h3>Sonntag, 18.10. (mein Geburtstag!)</h3>
           <ul>
             <li>
-              <strong>10:00 Uhr:</strong> Pilates im Garten – auch hier: nur
-              wenn ihr mögt!
+              <strong>10:00 Uhr:</strong> Pilates im Garten. Auch hier: nur wenn
+              ihr mögt!
             </li>
             <li>
-              Den Rest des Tages schauen wir einfach nach Lust und Laune –
+              Den Rest des Tages schauen wir einfach nach Lust und Laune:
               Strand, chillen, erkunden...
             </li>
           </ul>
@@ -448,14 +446,14 @@ export default function Kathis40AeginaAgistri() {
           <p>
             Ich habe eine Idee für einen der Abende: Wir könnten mit einem
             lokalen Wassertaxi rüber nach Agistri fahren und dort essen gehen.
-            Das ist aber nur eine Option – wir entscheiden das gemeinsam und
+            Das ist aber nur eine Option. Wir entscheiden das gemeinsam und
             spontan in der Gruppe. Kein Stress, kein Muss!
           </p>
 
           <ul>
             <li>
               <strong>Plan A:</strong> Mit dem Jamaica Water Taxi rüber nach
-              Agistri und Dinner im Alkyoni um 20:00 Uhr – tolles Restaurant
+              Agistri und Dinner im Alkyoni um 20:00 Uhr. Tolles Restaurant
               direkt am Wasser
             </li>
             <li>
@@ -520,16 +518,15 @@ export default function Kathis40AeginaAgistri() {
           <h2>Früher kommen oder länger bleiben?</h2>
 
           <p>
-            Einige von euch kommen früher oder bleiben länger – das ist
-            wunderbar! Gerade Agistri ist perfekt für ein paar Extra-Tage. Hier
-            könnt ihr schauen, wer wann wo ist und euch vielleicht schon vorab
-            treffen oder gemeinsam anreisen.
+            Einige von euch kommen früher, das ist wunderbar! Gerade Agistri ist
+            perfekt für ein paar Extra-Tage. Hier könnt ihr schauen, wer wann wo
+            ist und euch vielleicht schon vorab treffen oder gemeinsam anreisen.
           </p>
 
           <ul>
             <li>
-              <strong>Ich lebe auf Agistri</strong> in Megalochori – falls ihr
-              dort seid, können wir uns gerne treffen!
+              <strong>Ich lebe auf Agistri</strong> in Megalochori. Falls ihr
+              früher kommen möchtet, freue ich mich sehr!{" "}
             </li>
             <li>
               <strong>Plant eure Extra-Tage?</strong> Schreibt in die
@@ -538,7 +535,7 @@ export default function Kathis40AeginaAgistri() {
             </li>
             <li>
               <strong>Gemeinsam anreisen?</strong> Teilt eure Flug- und
-              Fährzeiten in der Gruppe – oft ergibt sich, dass man zusammen
+              Fährzeiten in der Gruppe. Oft ergibt sich, dass man zusammen
               fahren kann.
             </li>
           </ul>
@@ -548,7 +545,7 @@ export default function Kathis40AeginaAgistri() {
           <h2>Unser Haus auf Aegina</h2>
 
           <p>
-            Wir haben ein wunderschönes Haus gemietet – mit Garten, Terrasse und
+            Wir haben ein wunderschönes Haus gemietet, mit Garten, Terrasse und
             genug Platz für uns alle. Hier ist der Link, falls ihr euch das Haus
             mal anschauen möchtet:
           </p>
@@ -583,7 +580,7 @@ export default function Kathis40AeginaAgistri() {
 
           <p>
             Das Haus hat 6 Schlafzimmer plus einen Guest Room. Wir klären vor
-            Ort, wer wo schläft – ganz entspannt!
+            Ort, wer wo schläft.
           </p>
 
           <div
