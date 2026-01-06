@@ -217,9 +217,9 @@ export default function PistachioHouse() {
           <p className="subtitle">
             Hallo ihr Lieben! Ich freue mich so sehr, dass ihr dabei seid. Hier
             findet ihr alle Infos für unsere gemeinsame Zeit auf Ägina. Das
-            Highlight wird unser Samstagabend mit privatem Chef sein, aber auch
-            die anderen Tage werden entspannt und schön. Lasst uns zusammen
-            Sonne, Meer und gutes Essen genießen!
+            Highlight wird unser Samstagabend mit einer privatem Köchin sein,
+            aber auch die anderen Tage werden entspannt und schön. Lasst uns
+            zusammen Sonne, Meer und gutes Essen genießen!
           </p>
 
           <div className="meta-pills" aria-label="Eckdaten">
@@ -425,7 +425,7 @@ export default function PistachioHouse() {
               Lust hat, ist herzlich willkommen! 🧘
             </li>
             <li>
-              <strong>19:30 Uhr:</strong> Unser privater Chef zaubert uns ein
+              <strong>19:30 Uhr:</strong> Unsere private Köchin zaubert uns ein
               Festmahl: griechische Küche, BBQ, frischer Fisch, Meeresfrüchte,
               Fleisch... lasst euch überraschen! 🍽️✨
             </li>
