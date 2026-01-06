@@ -12,6 +12,7 @@ import Welcome from "./patterns/Welcome";
 import * as paths from "./config/paths";
 import LegalNotice from "./patterns/LegalNotice";
 import UnsereTiere from "./patterns/UnsereTiere";
+import PistachioHouse from "./patterns/PistachioHouse";
 
 function App() {
   const scrollToSection = (id) => {
@@ -47,6 +48,7 @@ function App() {
             />
             <Route path={paths.LEGAL_NOTICE} element={<LegalNotice />} />
             <Route path={paths.UNSERE_TIERE} element={<UnsereTiere />} />
+            <Route path={paths.PISTACHIO_HOUSE  } element={<PistachioHouse />} />
           </Routes>
           <Footer />
         </BrowserRouter>
