@@ -425,8 +425,7 @@ export default function PistachioHouse() {
               Lust hat, ist herzlich willkommen! 🧘
             </li>
             <li>
-              <strong>19:30 Uhr:</strong> Unsere private Köchin zaubert uns ein
-              Festmahl: griechische Küche, BBQ, frischer Fisch, Meeresfrüchte,
+              <strong>19:30 Uhr:</strong> Unsere private Köchin zaubert uns ein traditionelles Menü: griechische Küche, Mezze, BBQ, frischer Fisch, Meeresfrüchte,
               Fleisch... lasst euch überraschen! 🍽️✨
             </li>
           </ul>
