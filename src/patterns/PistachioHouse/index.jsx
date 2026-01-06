@@ -13,7 +13,11 @@ export default function PistachioHouse() {
       { label: "Geburtstag", value: "So 18.10.2026" },
       { label: "Check-in", value: "Fr 16.10. · 15:00" },
       { label: "Check-out", value: "Mo 19.10. · 11:00" },
-      { label: "Festessen", value: "Sa 17.10. · 19:30" },
+      { label: "Geburtstagsfeierei", value: "Sa 17.10. · 19:30" },
+      {
+        label: "Yoga & Pilates im Haus",
+        value: "Sa 17.10. + So 18.10. · 10:00",
+      },
     ],
     []
   );
@@ -22,7 +26,7 @@ export default function PistachioHouse() {
     () => [
       { label: "Anreise", value: "ATH → Piräus → Ägina" },
       { label: "Fähren", value: "via Ferryhopper buchen" },
-      { label: "Optional", value: "Yoga/Pilates 10:00" },
+      { label: "Im Haus", value: "Sa + So · Yoga/Pilates · 10:00" },
     ],
     []
   );
@@ -277,9 +281,14 @@ export default function PistachioHouse() {
 
           <ul>
             <li>
-              <strong>Samstag</strong> ist unser großer Abend mit privatem Chef.
-              Start um 19:30. Freut euch auf griechische Küche, BBQ und viele
-              Leckereien!
+              <strong>Samstag</strong> ist unser großer Abend mit einer privaten
+              Köchin. Start um 19:30. Freut euch auf griechische Küche, BBQ und
+              viele Leckereien!
+            </li>
+            <li>
+              <strong>Samstag & Sonntag</strong> kommt extra eine
+              Yoga/Pilates-Lehrerin zu uns ins Haus (jeweils um 10:00). Nur wenn
+              ihr mögt.
             </li>
             <li>
               <strong>Freitag und Sonntag</strong> halten wir entspannt.
@@ -412,8 +421,8 @@ export default function PistachioHouse() {
           <h3>Samstag, 17.10. (unser großer Abend!)</h3>
           <ul>
             <li>
-              <strong>10:00 Uhr:</strong> Yoga im Garten. Wer Lust hat, ist
-              herzlich willkommen! 🧘
+              <strong>10:00 Uhr:</strong> Yoga im Garten (mit Lehrerin). Wer
+              Lust hat, ist herzlich willkommen! 🧘
             </li>
             <li>
               <strong>19:30 Uhr:</strong> Unser privater Chef zaubert uns ein
@@ -425,8 +434,8 @@ export default function PistachioHouse() {
           <h3>Sonntag, 18.10. (mein Geburtstag!)</h3>
           <ul>
             <li>
-              <strong>10:00 Uhr:</strong> Pilates im Garten. Auch hier: nur wenn
-              ihr mögt!
+              <strong>10:00 Uhr:</strong> Pilates im Garten (mit Lehrerin). Auch
+              hier: nur wenn ihr mögt!
             </li>
             <li>
               Den Rest des Tages schauen wir einfach nach Lust und Laune:
